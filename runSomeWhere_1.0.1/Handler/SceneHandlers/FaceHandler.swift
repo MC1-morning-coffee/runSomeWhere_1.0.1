@@ -9,11 +9,36 @@ import Foundation
 
 class FaceStore: ObservableObject {
     
+    private let faceViewInfo = FACE_VIEW_INFO(size: CGSize(width: 150, height: 200), srcRoot: "Face")
+    
+    init() {
+        self.faceViewSize = faceViewInfo.size
+        self.faceViewSrcRoot = faceViewInfo.srcRoot
+    }
+    
+    @Published
+    var faceViewSize: CGSize
+    
+    @Published
+    var faceViewSrcRoot: String
+    
     @Published
     var currentFaces: [Speaker] = [.system]
     
     @Published
     var isFaceViewActive = false
+    
+    /**
+     rightFaceView의 애니메이션 효과를 위한 값
+     */
+    @Published
+    var rightFaceViewPositionX = 0.0
+    
+    /**
+     leftFaceView의 애니메이션 효과를 위한 값
+     */
+    @Published
+    var leftFaceViewPositionX = 0.0
 }
 
 extension FaceStore {
@@ -31,5 +56,18 @@ extension FaceStore {
     
     func turnOffIsFaceViewActive() {
         isFaceViewActive = false
+    }
+}
+
+/**
+ FaceView 애니메이션
+ */
+extension FaceStore {
+    func updateRightFaceViewPositionX(value: CGFloat) {
+        rightFaceViewPositionX = value
+    }
+    
+    func updateLeftFaceViewPositionX(value: CGFloat) {
+        leftFaceViewPositionX = value
     }
 }

@@ -8,9 +8,25 @@
 import Foundation
 
 class GlobalStore: ObservableObject {
-    
     @Published
     var scriptCount = 0
+    
+    @Published
+    var currentSequence: Sequence = .opeaning
+    
+    /**
+     SafeArea의 값을 들고 있는 변수
+     */
+    @Published
+    var safeAreaSize: SafeAreaSize = (0, 0) {
+        didSet {
+            print("safeArea top: ", safeAreaSize.0)
+            print("safeArea btm: ", safeAreaSize.1)
+        }
+    }
+    
+    @Published
+    var isSelectCharcterViewActive = false
 }
 
 extension GlobalStore {
@@ -20,5 +36,24 @@ extension GlobalStore {
     
     func resetScriptCount() {
         scriptCount = 0
+    }
+}
+
+extension GlobalStore {
+    func updateCurrentSequence(sequence: Sequence) {
+            currentSequence = sequence
+    }
+}
+
+// safeAreaSize
+extension GlobalStore {
+    func updateSafeAreaSize(currentSafeAreaSize: SafeAreaSize) {
+        safeAreaSize = currentSafeAreaSize
+    }
+}
+
+extension GlobalStore {
+    func turnOffIsSelectCharcterViewActive() {
+        isSelectCharcterViewActive = false
     }
 }

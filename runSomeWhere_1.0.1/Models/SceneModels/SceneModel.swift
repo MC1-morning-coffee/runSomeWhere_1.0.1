@@ -11,3 +11,8 @@ struct FACE_VIEW_INFO {
     let size: CGSize
     let srcRoot: String
 }
+
+struct DETAIL_IMAGE_VIEW_INFO {
+    let size: CGSize
+    let srcRoot: String
+}

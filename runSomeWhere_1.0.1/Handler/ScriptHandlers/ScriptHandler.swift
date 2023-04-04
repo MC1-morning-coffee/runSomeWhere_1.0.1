@@ -13,8 +13,10 @@ class ScriptStore: ObservableObject {
      현재 씬에 대한 스크립트 정보
      */
     init() {
-        self.currentScripts = script.SEQUENCE_OPENING_SCRIPTS
-        self.scriptBoxHeight = script.SCRIPT_BOX_HEIGHT
+        currentScripts = script.SEQUENCE_OPENING_SCRIPTS
+        currentSequenceCount = 0
+        scriptBoxHeight = script.SCRIPT_BOX_HEIGHT
+        cursorSize = script.CURSOR_SIZE
     }
     
     @Published
@@ -22,11 +24,29 @@ class ScriptStore: ObservableObject {
     
     @Published
     var scriptBoxHeight: CGFloat
+    
+    @Published
+    var currentSequenceCount: Int
+    
+    @Published
+    var cursorSize: CGFloat
+    
+    @Published
+    var isTapAble = false
+    
+    @Published
+    var isScriptBoxActive = false
+    
+    @Published
+    var value = ""
+    
+    @Published
+    var tmpText = ""
 }
 
 extension ScriptStore {
-    func updateCurrentScripts(scene: Sequence) {
-        switch scene {
+    func updateCurrentScripts(sequence: Sequence) {
+        switch sequence {
         case .opeaning:
             currentScripts = script.SEQUENCE_OPENING_SCRIPTS
         case .sequence1:
@@ -38,5 +58,54 @@ extension ScriptStore {
         case .ending:
             currentScripts = script.SEQUENCE_ENDING_SCRIPTS
         }
+    }
+}
+
+/**
+ 스크립트 텍스트 업데이트 및 애니메이션
+ */
+extension ScriptStore {
+    func typeWriter(at position: Int = 0) {
+        // tmpText = ""
+        if position == 0 {
+            tmpText = ""
+        }
+        if position < value.count {
+            DispatchQueue.main.asyncAfter(deadline: .now() + 0.05) {
+                self.tmpText.append(self.value[position])
+                self.typeWriter(at: position + 1)
+            }
+        }
+    }
+    
+    func updateScriptText(currentCount: Int) {
+        value = currentScripts[currentCount].1
+        typeWriter()
+    }
+}
+
+extension ScriptStore {
+    func updateCurrentScript(globalStore: GlobalStore, sceneStore: SceneStore) {
+
+        print(currentScripts)
+        print(globalStore.scriptCount)
+        
+        if value.count > tmpText.count {
+            return
+        }
+        if !isTapAble{
+            return
+        }
+        if globalStore.scriptCount == currentScripts.count - 1 {
+            currentSequenceCount += 1
+            if currentSequenceCount > 4 {
+                return
+            }
+            globalStore.updateCurrentSequence(sequence: .allCases[currentSequenceCount])
+            globalStore.resetScriptCount()
+        }else{
+            globalStore.scriptCount += 1
+        }
+        sceneStore.handleSequenceEvent(globalStore: globalStore)
     }
 }

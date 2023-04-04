@@ -8,6 +8,10 @@
 import Foundation
 
 class DetailPopupStore: ObservableObject {
+    
+    @Published
+    var detailImageInfo = DETAIL_IMAGE_VIEW_INFO(size: CGSize(width: 290, height: 290), srcRoot: "Image")
+    
     /**
      현재 디테일 이미지의 값을 변경하기 위한 변수
      */

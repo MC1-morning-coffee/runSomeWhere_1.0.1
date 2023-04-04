@@ -7,7 +7,7 @@
 
 import Foundation
 
-class Script {
+struct Script {
     typealias Script = ([Speaker], String)
     
     let SCRIPT_BOX_HEIGHT = CGFloat(194)
