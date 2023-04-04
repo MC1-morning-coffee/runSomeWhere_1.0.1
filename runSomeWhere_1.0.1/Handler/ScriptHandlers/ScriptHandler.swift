@@ -85,6 +85,7 @@ extension ScriptStore {
 }
 
 extension ScriptStore {
+    
     func updateCurrentScript(globalStore: GlobalStore, scriptStore: ScriptStore, sceneStore: SceneStore, faceStore: FaceStore, quizStore: QuizStore, detailPopupStore: DetailPopupStore) {
         print(globalStore.scriptCount)
         

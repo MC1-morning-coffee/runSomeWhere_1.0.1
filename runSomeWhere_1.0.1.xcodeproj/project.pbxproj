@@ -464,7 +464,6 @@
 		A9B777E029DBFB0F00E284DC /* SceneViews */ = {
 			isa = PBXGroup;
 			children = (
-				A95CCC8629DC120A00350C76 /* SceneObjectViews */,
 				A95CCC8329DC112700350C76 /* DetailPopupViews */,
 				A9B777E829DC0DE700E284DC /* SequenceViews */,
 				A9B777E329DC0AF700E284DC /* FaceViews */,
@@ -485,6 +484,7 @@
 		A9B777E829DC0DE700E284DC /* SequenceViews */ = {
 			isa = PBXGroup;
 			children = (
+				A95CCC8629DC120A00350C76 /* SceneObjectViews */,
 				A95CCC7329DC0EBD00350C76 /* SequenceBlinkView.swift */,
 				A95CCC7729DC0ED500350C76 /* SequenceIntroView.swift */,
 				A95CCC7B29DC0EEF00350C76 /* SequenceOpeningView.swift */,
