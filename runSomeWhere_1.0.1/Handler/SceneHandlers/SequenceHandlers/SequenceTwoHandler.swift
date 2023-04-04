@@ -7,6 +7,8 @@
 
 import Foundation
 
-class SequenceTwoHandler: ObservableObject {
-    
+extension SceneStore {
+    func handleSequenceTwo(globalStore: GlobalStore, scriptStore: ScriptStore, sceneStore: SceneStore, faceStore: FaceStore, quizStore: QuizStore, detailPopupStore: DetailPopupStore) {
+        
+    }
 }

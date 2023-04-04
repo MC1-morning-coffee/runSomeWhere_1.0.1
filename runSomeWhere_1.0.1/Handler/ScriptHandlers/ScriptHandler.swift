@@ -85,9 +85,7 @@ extension ScriptStore {
 }
 
 extension ScriptStore {
-    func updateCurrentScript(globalStore: GlobalStore, sceneStore: SceneStore) {
-
-        print(currentScripts)
+    func updateCurrentScript(globalStore: GlobalStore, scriptStore: ScriptStore, sceneStore: SceneStore, faceStore: FaceStore, quizStore: QuizStore, detailPopupStore: DetailPopupStore) {
         print(globalStore.scriptCount)
         
         if value.count > tmpText.count {
@@ -101,17 +99,32 @@ extension ScriptStore {
             if currentSequenceCount > 4 {
                 return
             }
+            updateCurrentScripts(sequence: .allCases[currentSequenceCount])
             globalStore.updateCurrentSequence(sequence: .allCases[currentSequenceCount])
             globalStore.resetScriptCount()
         }else{
-            globalStore.scriptCount += 1
+            globalStore.addScriptCount()
         }
-        sceneStore.handleSequenceEvent(globalStore: globalStore)
+        sceneStore.handleSequenceEvent(globalStore: globalStore, scriptStore: scriptStore, sceneStore: sceneStore, faceStore: faceStore, quizStore: quizStore, detailPopupStore: detailPopupStore)
     }
 }
 
 extension ScriptStore {
+    
     func turnOnIsTapAble() {
         isTapAble = true
     }
+    
+    func turnOffIsTapAble() {
+        isTapAble = false
+    }
+    
+    func turnOnIsScriptBoxActive() {
+        isScriptBoxActive = true
+    }
+    
+    func turnOffIsScriptBoxActive() {
+        isScriptBoxActive = false
+    }
+    
 }

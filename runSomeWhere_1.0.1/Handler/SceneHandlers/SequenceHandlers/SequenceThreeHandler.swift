@@ -7,14 +7,9 @@
 
 import Foundation
 
-class SequenceThreeStore: ObservableObject {
-    
-    @Published
-    var paddleCount = 0
-}
-
-extension SequenceThreeStore {
-    func addPaddleCount() {
-        paddleCount += 1
+extension SceneStore {
+    func handleSequenceThree(globalStore: GlobalStore, scriptStore: ScriptStore, sceneStore: SceneStore, faceStore: FaceStore, quizStore: QuizStore, detailPopupStore: DetailPopupStore) {
+        
     }
 }
+

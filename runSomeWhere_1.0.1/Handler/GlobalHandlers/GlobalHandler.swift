@@ -33,6 +33,9 @@ class GlobalStore: ObservableObject {
     
     @Published
     var isMovieStart = true
+    
+    @Published
+    var paddleCount = 0
 }
 
 extension GlobalStore {
@@ -59,6 +62,10 @@ extension GlobalStore {
 }
 
 extension GlobalStore {
+    func turnOnIsSelectCharcterViewActive() {
+        isSelectCharcterViewActive = true
+    }
+    
     func turnOffIsSelectCharcterViewActive() {
         isSelectCharcterViewActive = false
     }
@@ -67,5 +74,11 @@ extension GlobalStore {
 extension GlobalStore {
     func turnOffIsQuizSequence() {
         isQuizSequence = false
+    }
+}
+
+extension GlobalStore {
+    func addPaddleCount() {
+        paddleCount += 1
     }
 }

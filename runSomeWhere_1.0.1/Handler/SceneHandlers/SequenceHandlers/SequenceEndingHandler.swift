@@ -7,6 +7,8 @@
 
 import Foundation
 
-class SequenceEndingHandler: ObservableObject {
-    
+extension SceneStore {
+    func handleSequenceEnding(globalStore: GlobalStore, scriptStore: ScriptStore, sceneStore: SceneStore, faceStore: FaceStore, quizStore: QuizStore, detailPopupStore: DetailPopupStore) {
+        
+    }
 }

@@ -8,9 +8,9 @@
 import SwiftUI
 
 struct PaddleButtonView: View {
-
-    @StateObject
-    var sequenceThreeStore: SequenceThreeStore
+    
+    @EnvironmentObject
+    var globalStore: GlobalStore
     
     @State
     private var isOffsetActive = false
@@ -20,7 +20,7 @@ struct PaddleButtonView: View {
         DispatchQueue.main.asyncAfter(deadline: .now() + 0.02) {
             isOffsetActive = false
         }
-        sequenceThreeStore.addPaddleCount()
+        globalStore.addPaddleCount()
     }
     
     var body: some View {
@@ -33,9 +33,3 @@ struct PaddleButtonView: View {
             }
         }
     }
-
-struct PaddleButtonView_Previews: PreviewProvider {
-    static var previews: some View {
-        PaddleButtonView(sequenceThreeStore: SequenceThreeStore())
-    }
-}

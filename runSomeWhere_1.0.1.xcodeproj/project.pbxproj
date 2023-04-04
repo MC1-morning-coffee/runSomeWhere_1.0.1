@@ -27,7 +27,6 @@
 		A940C0F429DBAFD800B98857 /* safeArea.swift in Sources */ = {isa = PBXBuildFile; fileRef = A940C0F329DBAFD800B98857 /* safeArea.swift */; };
 		A940C0F729DBB0D600B98857 /* ScriptModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A940C0F629DBB0D600B98857 /* ScriptModel.swift */; };
 		A940C0FC29DBB4AD00B98857 /* Shared.swift in Sources */ = {isa = PBXBuildFile; fileRef = A940C0FB29DBB4AD00B98857 /* Shared.swift */; };
-		A940C0FE29DBB92B00B98857 /* ScriptService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A940C0FD29DBB92B00B98857 /* ScriptService.swift */; };
 		A940C10129DBB9E300B98857 /* ScriptHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = A940C10029DBB9E300B98857 /* ScriptHandler.swift */; };
 		A940C10429DBBFD300B98857 /* SceneModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A940C10329DBBFD300B98857 /* SceneModel.swift */; };
 		A940C10729DBC15600B98857 /* SceneHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = A940C10629DBC15600B98857 /* SceneHandler.swift */; };
@@ -115,7 +114,6 @@
 		A940C0F329DBAFD800B98857 /* safeArea.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = safeArea.swift; sourceTree = "<group>"; };
 		A940C0F629DBB0D600B98857 /* ScriptModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScriptModel.swift; sourceTree = "<group>"; };
 		A940C0FB29DBB4AD00B98857 /* Shared.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Shared.swift; sourceTree = "<group>"; };
-		A940C0FD29DBB92B00B98857 /* ScriptService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScriptService.swift; sourceTree = "<group>"; };
 		A940C10029DBB9E300B98857 /* ScriptHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScriptHandler.swift; sourceTree = "<group>"; };
 		A940C10329DBBFD300B98857 /* SceneModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneModel.swift; sourceTree = "<group>"; };
 		A940C10629DBC15600B98857 /* SceneHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneHandler.swift; sourceTree = "<group>"; };
@@ -244,7 +242,6 @@
 				A940C0E329DBAD2C00B98857 /* Extensions */,
 				A940C0E429DBADEC00B98857 /* Style */,
 				A940C0E029DBACDD00B98857 /* Models */,
-				A940C0F829DBB17400B98857 /* Services */,
 				A940C0E229DBACFA00B98857 /* Handler */,
 				A940C0DF29DBACD400B98857 /* Views */,
 				A940C0BA29DBA0F400B98857 /* Preview Content */,
@@ -385,22 +382,6 @@
 				A940C0F629DBB0D600B98857 /* ScriptModel.swift */,
 			);
 			path = ScriptModels;
-			sourceTree = "<group>";
-		};
-		A940C0F829DBB17400B98857 /* Services */ = {
-			isa = PBXGroup;
-			children = (
-				A940C0F929DBB17D00B98857 /* ScriptServices */,
-			);
-			path = Services;
-			sourceTree = "<group>";
-		};
-		A940C0F929DBB17D00B98857 /* ScriptServices */ = {
-			isa = PBXGroup;
-			children = (
-				A940C0FD29DBB92B00B98857 /* ScriptService.swift */,
-			);
-			path = ScriptServices;
 			sourceTree = "<group>";
 		};
 		A940C0FA29DBB3EE00B98857 /* GlobalModels */ = {
@@ -702,7 +683,6 @@
 				A9BA63E229DC40CC006FBD69 /* SelectCharcterView.swift in Sources */,
 				A940C10729DBC15600B98857 /* SceneHandler.swift in Sources */,
 				A940C0F729DBB0D600B98857 /* ScriptModel.swift in Sources */,
-				A940C0FE29DBB92B00B98857 /* ScriptService.swift in Sources */,
 				A940C10429DBBFD300B98857 /* SceneModel.swift in Sources */,
 				A940C0B529DBA0F300B98857 /* runSomeWhere_1_0_1App.swift in Sources */,
 				A95CCC9029DC12D400350C76 /* JolJolView.swift in Sources */,

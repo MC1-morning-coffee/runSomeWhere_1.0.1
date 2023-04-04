@@ -143,67 +143,67 @@ struct SequenceTwoView: View {
         .onReceive(globalStore.$scriptCount, perform: { currentCount in
             handleSequenceView(scriptCount: currentCount)
             
-            switch currentCount {
-            case 0:
-                let musicFileName = backgroundMusicFiles[0]
-                
-                    let musicFileUrl =  Bundle.main.url(forResource: musicFileName,
-                                                        withExtension: musicFileExtension)!
-                    backgroundMusicPlayer = AVPlayer(url: musicFileUrl)
-                    backgroundMusicPlayer?.volume = volume
-                    backgroundMusicPlayer?.play()
-            case 1:
-                let musicFileName = soundEffectFiles[1]
-                
-                    let musicFileUrl =  Bundle.main.url(forResource: musicFileName,
-                                                        withExtension: musicFileExtension)!
-                    backgroundMusicPlayer = AVPlayer(url: musicFileUrl)
-                    backgroundMusicPlayer?.volume = volume
-                    backgroundMusicPlayer?.play()
-            case 5:
-                let musicFileName = soundEffectFiles[3]
-                
-                    let musicFileUrl =  Bundle.main.url(forResource: musicFileName,
-                                                        withExtension: musicFileExtension)!
-                    backgroundMusicPlayer = AVPlayer(url: musicFileUrl)
-                    backgroundMusicPlayer?.volume = volume
-                    backgroundMusicPlayer?.play()
-            case 6:
-                let musicFileName = soundEffectFiles[2]
-                
-                    let musicFileUrl =  Bundle.main.url(forResource: musicFileName,
-                                                        withExtension: musicFileExtension)!
-                    backgroundMusicPlayer = AVPlayer(url: musicFileUrl)
-                    backgroundMusicPlayer?.volume = volume
-                    backgroundMusicPlayer?.play()
-            case 7:
-                let musicFileName = soundEffectFiles[0]
-                
-                    let musicFileUrl =  Bundle.main.url(forResource: musicFileName,
-                                                        withExtension: musicFileExtension)!
-                    backgroundMusicPlayer = AVPlayer(url: musicFileUrl)
-                    backgroundMusicPlayer?.volume = volume
-                    backgroundMusicPlayer?.play()
-            case 8:
-                let musicFileName = soundEffectFiles[4]
-                
-                    let musicFileUrl =  Bundle.main.url(forResource: musicFileName,
-                                                        withExtension: musicFileExtension)!
-                    backgroundMusicPlayer = AVPlayer(url: musicFileUrl)
-                    backgroundMusicPlayer?.volume = volume
-                    backgroundMusicPlayer?.play()
-            case 9:
-                let musicFileName = soundEffectFiles[2]
-                
-                    let musicFileUrl =  Bundle.main.url(forResource: musicFileName,
-                                                        withExtension: musicFileExtension)!
-                    backgroundMusicPlayer = AVPlayer(url: musicFileUrl)
-                    backgroundMusicPlayer?.volume = volume
-                    backgroundMusicPlayer?.play()
-                
-            default:
-                break
-            }
+//            switch currentCount {
+//            case 0:
+//                let musicFileName = backgroundMusicFiles[0]
+//                
+//                    let musicFileUrl =  Bundle.main.url(forResource: musicFileName,
+//                                                        withExtension: musicFileExtension)!
+//                    backgroundMusicPlayer = AVPlayer(url: musicFileUrl)
+//                    backgroundMusicPlayer?.volume = volume
+//                    backgroundMusicPlayer?.play()
+//            case 1:
+//                let musicFileName = soundEffectFiles[1]
+//                
+//                    let musicFileUrl =  Bundle.main.url(forResource: musicFileName,
+//                                                        withExtension: musicFileExtension)!
+//                    backgroundMusicPlayer = AVPlayer(url: musicFileUrl)
+//                    backgroundMusicPlayer?.volume = volume
+//                    backgroundMusicPlayer?.play()
+//            case 5:
+//                let musicFileName = soundEffectFiles[3]
+//                
+//                    let musicFileUrl =  Bundle.main.url(forResource: musicFileName,
+//                                                        withExtension: musicFileExtension)!
+//                    backgroundMusicPlayer = AVPlayer(url: musicFileUrl)
+//                    backgroundMusicPlayer?.volume = volume
+//                    backgroundMusicPlayer?.play()
+//            case 6:
+//                let musicFileName = soundEffectFiles[2]
+//                
+//                    let musicFileUrl =  Bundle.main.url(forResource: musicFileName,
+//                                                        withExtension: musicFileExtension)!
+//                    backgroundMusicPlayer = AVPlayer(url: musicFileUrl)
+//                    backgroundMusicPlayer?.volume = volume
+//                    backgroundMusicPlayer?.play()
+//            case 7:
+//                let musicFileName = soundEffectFiles[0]
+//                
+//                    let musicFileUrl =  Bundle.main.url(forResource: musicFileName,
+//                                                        withExtension: musicFileExtension)!
+//                    backgroundMusicPlayer = AVPlayer(url: musicFileUrl)
+//                    backgroundMusicPlayer?.volume = volume
+//                    backgroundMusicPlayer?.play()
+//            case 8:
+//                let musicFileName = soundEffectFiles[4]
+//                
+//                    let musicFileUrl =  Bundle.main.url(forResource: musicFileName,
+//                                                        withExtension: musicFileExtension)!
+//                    backgroundMusicPlayer = AVPlayer(url: musicFileUrl)
+//                    backgroundMusicPlayer?.volume = volume
+//                    backgroundMusicPlayer?.play()
+//            case 9:
+//                let musicFileName = soundEffectFiles[2]
+//                
+//                    let musicFileUrl =  Bundle.main.url(forResource: musicFileName,
+//                                                        withExtension: musicFileExtension)!
+//                    backgroundMusicPlayer = AVPlayer(url: musicFileUrl)
+//                    backgroundMusicPlayer?.volume = volume
+//                    backgroundMusicPlayer?.play()
+//                
+//            default:
+//                break
+//            }
         })
     }
 }

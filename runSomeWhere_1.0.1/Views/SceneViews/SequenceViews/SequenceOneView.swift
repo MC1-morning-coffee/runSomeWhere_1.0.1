@@ -108,47 +108,47 @@ struct SequenceOneView: View {
         }
         .onReceive(globalStore.$scriptCount, perform: { currentCount in
             handleSequenceView(scriptCount: currentCount)
-            switch currentCount {
-            case 0:
-                let musicFileName = backgroundMusicFiles[0] // count starts at 1, but array index starts at 0
-                let musicFileUrl = Bundle.main.url(forResource: musicFileName, withExtension: musicFileExtension)!
-                backgroundMusicPlayer = AVPlayer(url: musicFileUrl)
-                backgroundMusicPlayer?.volume = volume
-                backgroundMusicPlayer?.play()
-                
-//                let effectFileName = soundEffectFiles[0] // count starts at 1, but array index starts at 0
-//                let effectFileUrl = Bundle.main.url(forResource: effectFileName, withExtension: musicFileExtension1)!
-//                soundEffectPlayer = AVPlayer(url: effectFileUrl)
-//                soundEffectPlayer?.volume = volume1
-//                soundEffectPlayer?.play()
-            case 1:
-                let musicFileName = soundEffectFiles[0] // count starts at 1, but array index starts at 0
-                let musicFileUrl = Bundle.main.url(forResource: musicFileName, withExtension: musicFileExtension)!
-                backgroundMusicPlayer = AVPlayer(url: musicFileUrl)
-                backgroundMusicPlayer?.volume = volume
-                backgroundMusicPlayer?.play()
-            case 2:
-                let musicFileName = soundEffectFiles[1] // count starts at 1, but array index starts at 0
-                let musicFileUrl = Bundle.main.url(forResource: musicFileName, withExtension: musicFileExtension)!
-                backgroundMusicPlayer = AVPlayer(url: musicFileUrl)
-                backgroundMusicPlayer?.volume = volume
-                backgroundMusicPlayer?.play()
-            case 5:
-                let musicFileName = soundEffectFiles[2] // count starts at 1, but array index starts at 0
-                let musicFileUrl = Bundle.main.url(forResource: musicFileName, withExtension: musicFileExtension)!
-                backgroundMusicPlayer = AVPlayer(url: musicFileUrl)
-                backgroundMusicPlayer?.volume = volume
-                backgroundMusicPlayer?.play()
-            case 7:
-                let musicFileName = soundEffectFiles[3] // count starts at 1, but array index starts at 0
-                let musicFileUrl = Bundle.main.url(forResource: musicFileName, withExtension: musicFileExtension)!
-                backgroundMusicPlayer = AVPlayer(url: musicFileUrl)
-                backgroundMusicPlayer?.volume = volume
-                backgroundMusicPlayer?.play()
-                
-            default:
-                break
-            }
+//            switch currentCount {
+//            case 0:
+//                let musicFileName = backgroundMusicFiles[0] // count starts at 1, but array index starts at 0
+//                let musicFileUrl = Bundle.main.url(forResource: musicFileName, withExtension: musicFileExtension)!
+//                backgroundMusicPlayer = AVPlayer(url: musicFileUrl)
+//                backgroundMusicPlayer?.volume = volume
+//                backgroundMusicPlayer?.play()
+//                
+////                let effectFileName = soundEffectFiles[0] // count starts at 1, but array index starts at 0
+////                let effectFileUrl = Bundle.main.url(forResource: effectFileName, withExtension: musicFileExtension1)!
+////                soundEffectPlayer = AVPlayer(url: effectFileUrl)
+////                soundEffectPlayer?.volume = volume1
+////                soundEffectPlayer?.play()
+//            case 1:
+//                let musicFileName = soundEffectFiles[0] // count starts at 1, but array index starts at 0
+//                let musicFileUrl = Bundle.main.url(forResource: musicFileName, withExtension: musicFileExtension)!
+//                backgroundMusicPlayer = AVPlayer(url: musicFileUrl)
+//                backgroundMusicPlayer?.volume = volume
+//                backgroundMusicPlayer?.play()
+//            case 2:
+//                let musicFileName = soundEffectFiles[1] // count starts at 1, but array index starts at 0
+//                let musicFileUrl = Bundle.main.url(forResource: musicFileName, withExtension: musicFileExtension)!
+//                backgroundMusicPlayer = AVPlayer(url: musicFileUrl)
+//                backgroundMusicPlayer?.volume = volume
+//                backgroundMusicPlayer?.play()
+//            case 5:
+//                let musicFileName = soundEffectFiles[2] // count starts at 1, but array index starts at 0
+//                let musicFileUrl = Bundle.main.url(forResource: musicFileName, withExtension: musicFileExtension)!
+//                backgroundMusicPlayer = AVPlayer(url: musicFileUrl)
+//                backgroundMusicPlayer?.volume = volume
+//                backgroundMusicPlayer?.play()
+//            case 7:
+//                let musicFileName = soundEffectFiles[3] // count starts at 1, but array index starts at 0
+//                let musicFileUrl = Bundle.main.url(forResource: musicFileName, withExtension: musicFileExtension)!
+//                backgroundMusicPlayer = AVPlayer(url: musicFileUrl)
+//                backgroundMusicPlayer?.volume = volume
+//                backgroundMusicPlayer?.play()
+//                
+//            default:
+//                break
+//            }
         })
         
     }

@@ -23,7 +23,14 @@ struct ScriptBoxView: View {
     @EnvironmentObject
     var sceneStore: SceneStore
     
+    @EnvironmentObject
+    var faceStore: FaceStore
     
+    @EnvironmentObject
+    var quizStore: QuizStore
+    
+    @EnvironmentObject
+    var detailPopupStore: DetailPopupStore
     
     @State
     private var isFlickering = false
@@ -59,7 +66,7 @@ struct ScriptBoxView: View {
         .frame(width: width, height: scriptStore.scriptBoxHeight)
         .background(CustomColor.scriptBox)
         .onTapGesture {
-            scriptStore.updateCurrentScript(globalStore: globalStore, sceneStore: sceneStore)
+            scriptStore.updateCurrentScript(globalStore: globalStore, scriptStore: scriptStore, sceneStore: sceneStore, faceStore: faceStore, quizStore: quizStore, detailPopupStore: detailPopupStore)
         }
         .onReceive(globalStore.$scriptCount, perform: { currentCount in
             scriptStore.updateScriptText(currentCount: currentCount)

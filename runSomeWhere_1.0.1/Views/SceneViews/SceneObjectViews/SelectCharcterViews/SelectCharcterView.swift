@@ -25,14 +25,14 @@ struct SelectCharcterView: View {
     @EnvironmentObject
     var detailPopupStore: DetailPopupStore
     
-    @StateObject
-    var sequenceOpeningStore = SequenceOpeningStore()
-    
+    @EnvironmentObject
+    var sceneStore: SceneStore
+        
     private let SCRIPT_BOX_VIEW_BACKGROUND_IMAGE = "Background_Text"
     private let charcters: [Charcter] = [.walker, .coffee, .luna, .olive, .muho, .henry]
     
     private func handleSelectAnswer() {
-        sequenceOpeningStore.handleSequenceSelectCharcter(globalStore: globalStore, scriptStore: scriptStore, detailPopupStore: detailPopupStore)
+        sceneStore.handleSequenceSelectCharcter(globalStore: globalStore, scriptStore: scriptStore, detailPopupStore: detailPopupStore)
     }
     
     private let gridColumns = [GridItem(),GridItem()]
