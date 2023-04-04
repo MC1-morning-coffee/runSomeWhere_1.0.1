@@ -1,0 +1,38 @@
+//
+//  DetailPopupHandler.swift
+//  runSomeWhere_1.0.1
+//
+//  Created by Yun Dongbeom on 2023/04/04.
+//
+
+import Foundation
+
+class DetailPopupStore: ObservableObject {
+    /**
+     현재 디테일 이미지의 값을 변경하기 위한 변수
+     */
+    @Published
+    var currentDetailImage: DetailImage = .Pouch
+    
+    @Published
+    var isDetailPopupActive = false
+}
+
+extension DetailPopupStore {
+    
+    func updateCurrentDetailImage(detailImage: DetailImage) {
+        currentDetailImage = detailImage
+    }
+    
+    func toggleIsPopupActive() {
+        isDetailPopupActive.toggle()
+    }
+    
+    func turnOnIsPopupActive() {
+        isDetailPopupActive = true
+    }
+    
+    func turnOffIsPopupActive() {
+        isDetailPopupActive = false
+    }
+}

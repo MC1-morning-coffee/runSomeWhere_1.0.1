@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A9151BE729DBC459007AF154 /* GlobalHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9151BE629DBC459007AF154 /* GlobalHandler.swift */; };
+		A9151BE929DBC4BB007AF154 /* FaceHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9151BE829DBC4BB007AF154 /* FaceHandler.swift */; };
+		A9151BEB29DBC84A007AF154 /* DetailPopupHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9151BEA29DBC84A007AF154 /* DetailPopupHandler.swift */; };
+		A9151BED29DBCA06007AF154 /* CustomText.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9151BEC29DBCA06007AF154 /* CustomText.swift */; };
 		A940C0B529DBA0F300B98857 /* runSomeWhere_1_0_1App.swift in Sources */ = {isa = PBXBuildFile; fileRef = A940C0B429DBA0F300B98857 /* runSomeWhere_1_0_1App.swift */; };
 		A940C0B729DBA0F300B98857 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A940C0B629DBA0F300B98857 /* ContentView.swift */; };
 		A940C0B929DBA0F400B98857 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A940C0B829DBA0F400B98857 /* Assets.xcassets */; };
@@ -14,6 +18,19 @@
 		A940C0C629DBA0F400B98857 /* runSomeWhere_1_0_1Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A940C0C529DBA0F400B98857 /* runSomeWhere_1_0_1Tests.swift */; };
 		A940C0D029DBA0F400B98857 /* runSomeWhere_1_0_1UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A940C0CF29DBA0F400B98857 /* runSomeWhere_1_0_1UITests.swift */; };
 		A940C0D229DBA0F400B98857 /* runSomeWhere_1_0_1UITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A940C0D129DBA0F400B98857 /* runSomeWhere_1_0_1UITestsLaunchTests.swift */; };
+		A940C0E929DBAEE300B98857 /* CustomColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = A940C0E829DBAEE300B98857 /* CustomColor.swift */; };
+		A940C0EC29DBAF0500B98857 /* CustomFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = A940C0EB29DBAF0500B98857 /* CustomFont.swift */; };
+		A940C0F029DBAF5700B98857 /* setTimeInterval.swift in Sources */ = {isa = PBXBuildFile; fileRef = A940C0EF29DBAF5700B98857 /* setTimeInterval.swift */; };
+		A940C0F229DBAF8800B98857 /* setTimeout.swift in Sources */ = {isa = PBXBuildFile; fileRef = A940C0F129DBAF8800B98857 /* setTimeout.swift */; };
+		A940C0F429DBAFD800B98857 /* safeArea.swift in Sources */ = {isa = PBXBuildFile; fileRef = A940C0F329DBAFD800B98857 /* safeArea.swift */; };
+		A940C0F729DBB0D600B98857 /* ScriptModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A940C0F629DBB0D600B98857 /* ScriptModel.swift */; };
+		A940C0FC29DBB4AD00B98857 /* Shared.swift in Sources */ = {isa = PBXBuildFile; fileRef = A940C0FB29DBB4AD00B98857 /* Shared.swift */; };
+		A940C0FE29DBB92B00B98857 /* ScriptService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A940C0FD29DBB92B00B98857 /* ScriptService.swift */; };
+		A940C10129DBB9E300B98857 /* ScriptHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = A940C10029DBB9E300B98857 /* ScriptHandler.swift */; };
+		A940C10429DBBFD300B98857 /* SceneModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A940C10329DBBFD300B98857 /* SceneModel.swift */; };
+		A940C10729DBC15600B98857 /* SceneHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = A940C10629DBC15600B98857 /* SceneHandler.swift */; };
+		A940C10A29DBC23200B98857 /* QuizModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A940C10929DBC23200B98857 /* QuizModel.swift */; };
+		A940C10D29DBC28C00B98857 /* QuizHanlder.swift in Sources */ = {isa = PBXBuildFile; fileRef = A940C10C29DBC28C00B98857 /* QuizHanlder.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +51,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		A9151BE629DBC459007AF154 /* GlobalHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalHandler.swift; sourceTree = "<group>"; };
+		A9151BE829DBC4BB007AF154 /* FaceHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FaceHandler.swift; sourceTree = "<group>"; };
+		A9151BEA29DBC84A007AF154 /* DetailPopupHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailPopupHandler.swift; sourceTree = "<group>"; };
+		A9151BEC29DBCA06007AF154 /* CustomText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomText.swift; sourceTree = "<group>"; };
 		A940C0B129DBA0F300B98857 /* runSomeWhere_1.0.1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = runSomeWhere_1.0.1.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A940C0B429DBA0F300B98857 /* runSomeWhere_1_0_1App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = runSomeWhere_1_0_1App.swift; sourceTree = "<group>"; };
 		A940C0B629DBA0F300B98857 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -44,6 +65,20 @@
 		A940C0CB29DBA0F400B98857 /* runSomeWhere_1.0.1UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = runSomeWhere_1.0.1UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A940C0CF29DBA0F400B98857 /* runSomeWhere_1_0_1UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = runSomeWhere_1_0_1UITests.swift; sourceTree = "<group>"; };
 		A940C0D129DBA0F400B98857 /* runSomeWhere_1_0_1UITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = runSomeWhere_1_0_1UITestsLaunchTests.swift; sourceTree = "<group>"; };
+		A940C0DE29DBAC6100B98857 /* Readme.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = Readme.md; sourceTree = "<group>"; };
+		A940C0E829DBAEE300B98857 /* CustomColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomColor.swift; sourceTree = "<group>"; };
+		A940C0EB29DBAF0500B98857 /* CustomFont.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomFont.swift; sourceTree = "<group>"; };
+		A940C0EF29DBAF5700B98857 /* setTimeInterval.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = setTimeInterval.swift; sourceTree = "<group>"; };
+		A940C0F129DBAF8800B98857 /* setTimeout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = setTimeout.swift; sourceTree = "<group>"; };
+		A940C0F329DBAFD800B98857 /* safeArea.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = safeArea.swift; sourceTree = "<group>"; };
+		A940C0F629DBB0D600B98857 /* ScriptModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScriptModel.swift; sourceTree = "<group>"; };
+		A940C0FB29DBB4AD00B98857 /* Shared.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Shared.swift; sourceTree = "<group>"; };
+		A940C0FD29DBB92B00B98857 /* ScriptService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScriptService.swift; sourceTree = "<group>"; };
+		A940C10029DBB9E300B98857 /* ScriptHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScriptHandler.swift; sourceTree = "<group>"; };
+		A940C10329DBBFD300B98857 /* SceneModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneModel.swift; sourceTree = "<group>"; };
+		A940C10629DBC15600B98857 /* SceneHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneHandler.swift; sourceTree = "<group>"; };
+		A940C10929DBC23200B98857 /* QuizModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizModel.swift; sourceTree = "<group>"; };
+		A940C10C29DBC28C00B98857 /* QuizHanlder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizHanlder.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,9 +106,25 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A9151BE429DBC423007AF154 /* GlobalHandlers */ = {
+			isa = PBXGroup;
+			children = (
+				A9151BE629DBC459007AF154 /* GlobalHandler.swift */,
+			);
+			path = GlobalHandlers;
+			sourceTree = "<group>";
+		};
+		A9151BE529DBC435007AF154 /* UserModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = UserModels;
+			sourceTree = "<group>";
+		};
 		A940C0A829DBA0F300B98857 = {
 			isa = PBXGroup;
 			children = (
+				A940C0DE29DBAC6100B98857 /* Readme.md */,
 				A940C0B329DBA0F300B98857 /* runSomeWhere_1.0.1 */,
 				A940C0C429DBA0F400B98857 /* runSomeWhere_1.0.1Tests */,
 				A940C0CE29DBA0F400B98857 /* runSomeWhere_1.0.1UITests */,
@@ -94,6 +145,13 @@
 		A940C0B329DBA0F300B98857 /* runSomeWhere_1.0.1 */ = {
 			isa = PBXGroup;
 			children = (
+				A940C0E129DBACEA00B98857 /* Utils */,
+				A940C0E429DBADEC00B98857 /* Style */,
+				A940C0E329DBAD2C00B98857 /* Extensions */,
+				A940C0E029DBACDD00B98857 /* Models */,
+				A940C0F829DBB17400B98857 /* Services */,
+				A940C0E229DBACFA00B98857 /* Handler */,
+				A940C0DF29DBACD400B98857 /* Views */,
 				A940C0B429DBA0F300B98857 /* runSomeWhere_1_0_1App.swift */,
 				A940C0B629DBA0F300B98857 /* ContentView.swift */,
 				A940C0B829DBA0F400B98857 /* Assets.xcassets */,
@@ -125,6 +183,177 @@
 				A940C0D129DBA0F400B98857 /* runSomeWhere_1_0_1UITestsLaunchTests.swift */,
 			);
 			path = runSomeWhere_1.0.1UITests;
+			sourceTree = "<group>";
+		};
+		A940C0DF29DBACD400B98857 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				A940C0E529DBAE0D00B98857 /* ComponentViews */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		A940C0E029DBACDD00B98857 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				A9151BE529DBC435007AF154 /* UserModels */,
+				A940C10829DBC21800B98857 /* QuizModels */,
+				A940C10229DBBFC300B98857 /* SceneModels */,
+				A940C0FA29DBB3EE00B98857 /* GlobalModels */,
+				A940C0F529DBB0A300B98857 /* ScriptModels */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		A940C0E129DBACEA00B98857 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				A940C0EE29DBAF3F00B98857 /* WindowUtils */,
+				A940C0ED29DBAF2600B98857 /* TimerUtils */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		A940C0E229DBACFA00B98857 /* Handler */ = {
+			isa = PBXGroup;
+			children = (
+				A9151BE429DBC423007AF154 /* GlobalHandlers */,
+				A940C10B29DBC27E00B98857 /* QuizHandlers */,
+				A940C10529DBC14500B98857 /* SceneHandlers */,
+				A940C0FF29DBB9C700B98857 /* ScriptHandlers */,
+			);
+			path = Handler;
+			sourceTree = "<group>";
+		};
+		A940C0E329DBAD2C00B98857 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		A940C0E429DBADEC00B98857 /* Style */ = {
+			isa = PBXGroup;
+			children = (
+				A940C0EA29DBAEF500B98857 /* Font */,
+				A940C0E729DBAEC900B98857 /* Color */,
+			);
+			path = Style;
+			sourceTree = "<group>";
+		};
+		A940C0E529DBAE0D00B98857 /* ComponentViews */ = {
+			isa = PBXGroup;
+			children = (
+				A9151BEC29DBCA06007AF154 /* CustomText.swift */,
+			);
+			path = ComponentViews;
+			sourceTree = "<group>";
+		};
+		A940C0E729DBAEC900B98857 /* Color */ = {
+			isa = PBXGroup;
+			children = (
+				A940C0E829DBAEE300B98857 /* CustomColor.swift */,
+			);
+			path = Color;
+			sourceTree = "<group>";
+		};
+		A940C0EA29DBAEF500B98857 /* Font */ = {
+			isa = PBXGroup;
+			children = (
+				A940C0EB29DBAF0500B98857 /* CustomFont.swift */,
+			);
+			path = Font;
+			sourceTree = "<group>";
+		};
+		A940C0ED29DBAF2600B98857 /* TimerUtils */ = {
+			isa = PBXGroup;
+			children = (
+				A940C0EF29DBAF5700B98857 /* setTimeInterval.swift */,
+				A940C0F129DBAF8800B98857 /* setTimeout.swift */,
+			);
+			path = TimerUtils;
+			sourceTree = "<group>";
+		};
+		A940C0EE29DBAF3F00B98857 /* WindowUtils */ = {
+			isa = PBXGroup;
+			children = (
+				A940C0F329DBAFD800B98857 /* safeArea.swift */,
+			);
+			path = WindowUtils;
+			sourceTree = "<group>";
+		};
+		A940C0F529DBB0A300B98857 /* ScriptModels */ = {
+			isa = PBXGroup;
+			children = (
+				A940C0F629DBB0D600B98857 /* ScriptModel.swift */,
+			);
+			path = ScriptModels;
+			sourceTree = "<group>";
+		};
+		A940C0F829DBB17400B98857 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				A940C0F929DBB17D00B98857 /* ScriptServices */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		A940C0F929DBB17D00B98857 /* ScriptServices */ = {
+			isa = PBXGroup;
+			children = (
+				A940C0FD29DBB92B00B98857 /* ScriptService.swift */,
+			);
+			path = ScriptServices;
+			sourceTree = "<group>";
+		};
+		A940C0FA29DBB3EE00B98857 /* GlobalModels */ = {
+			isa = PBXGroup;
+			children = (
+				A940C0FB29DBB4AD00B98857 /* Shared.swift */,
+			);
+			path = GlobalModels;
+			sourceTree = "<group>";
+		};
+		A940C0FF29DBB9C700B98857 /* ScriptHandlers */ = {
+			isa = PBXGroup;
+			children = (
+				A940C10029DBB9E300B98857 /* ScriptHandler.swift */,
+			);
+			path = ScriptHandlers;
+			sourceTree = "<group>";
+		};
+		A940C10229DBBFC300B98857 /* SceneModels */ = {
+			isa = PBXGroup;
+			children = (
+				A940C10329DBBFD300B98857 /* SceneModel.swift */,
+			);
+			path = SceneModels;
+			sourceTree = "<group>";
+		};
+		A940C10529DBC14500B98857 /* SceneHandlers */ = {
+			isa = PBXGroup;
+			children = (
+				A940C10629DBC15600B98857 /* SceneHandler.swift */,
+				A9151BE829DBC4BB007AF154 /* FaceHandler.swift */,
+				A9151BEA29DBC84A007AF154 /* DetailPopupHandler.swift */,
+			);
+			path = SceneHandlers;
+			sourceTree = "<group>";
+		};
+		A940C10829DBC21800B98857 /* QuizModels */ = {
+			isa = PBXGroup;
+			children = (
+				A940C10929DBC23200B98857 /* QuizModel.swift */,
+			);
+			path = QuizModels;
+			sourceTree = "<group>";
+		};
+		A940C10B29DBC27E00B98857 /* QuizHandlers */ = {
+			isa = PBXGroup;
+			children = (
+				A940C10C29DBC28C00B98857 /* QuizHanlder.swift */,
+			);
+			path = QuizHandlers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -258,7 +487,24 @@
 			buildActionMask = 2147483647;
 			files = (
 				A940C0B729DBA0F300B98857 /* ContentView.swift in Sources */,
+				A940C0FC29DBB4AD00B98857 /* Shared.swift in Sources */,
+				A940C0EC29DBAF0500B98857 /* CustomFont.swift in Sources */,
+				A940C10129DBB9E300B98857 /* ScriptHandler.swift in Sources */,
+				A9151BE929DBC4BB007AF154 /* FaceHandler.swift in Sources */,
+				A940C10729DBC15600B98857 /* SceneHandler.swift in Sources */,
+				A940C0F729DBB0D600B98857 /* ScriptModel.swift in Sources */,
+				A940C0FE29DBB92B00B98857 /* ScriptService.swift in Sources */,
+				A940C10429DBBFD300B98857 /* SceneModel.swift in Sources */,
 				A940C0B529DBA0F300B98857 /* runSomeWhere_1_0_1App.swift in Sources */,
+				A940C0E929DBAEE300B98857 /* CustomColor.swift in Sources */,
+				A940C0F229DBAF8800B98857 /* setTimeout.swift in Sources */,
+				A940C0F429DBAFD800B98857 /* safeArea.swift in Sources */,
+				A940C10D29DBC28C00B98857 /* QuizHanlder.swift in Sources */,
+				A9151BED29DBCA06007AF154 /* CustomText.swift in Sources */,
+				A9151BE729DBC459007AF154 /* GlobalHandler.swift in Sources */,
+				A940C10A29DBC23200B98857 /* QuizModel.swift in Sources */,
+				A9151BEB29DBC84A007AF154 /* DetailPopupHandler.swift in Sources */,
+				A940C0F029DBAF5700B98857 /* setTimeInterval.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

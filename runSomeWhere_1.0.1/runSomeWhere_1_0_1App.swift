@@ -9,6 +9,11 @@ import SwiftUI
 
 @main
 struct runSomeWhere_1_0_1App: App {
+
+    init() {
+        CustomFont.registerFonts(fontName: "morris9")
+    }
+    
     var body: some Scene {
         WindowGroup {
             ContentView()
