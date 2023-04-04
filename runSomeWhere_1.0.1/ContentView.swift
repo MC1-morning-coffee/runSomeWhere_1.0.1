@@ -12,7 +12,7 @@ struct ContentView: View {
     
     @EnvironmentObject
     var globalStore: GlobalStore
-        
+    
     @EnvironmentObject
     var scriptStore: ScriptStore
     
@@ -20,10 +20,10 @@ struct ContentView: View {
         GeometryReader { geo in
             ZStack(alignment: .topLeading) {
                 VStack(spacing: 0){
-                    SceneView()
+                SceneView()
                 if scriptStore.isScriptBoxActive {
                     ScriptBoxView(width: geo.size.width)
-                    }
+                }
                 }
                 if globalStore.isSelectCharcterViewActive {
                     SelectCharcterView(width: geo.size.width)
@@ -38,12 +38,11 @@ struct ContentView: View {
                 if globalStore.isMovieStart {
                     SequenceIntroView()
                         .onTapGesture {
-                            globalStore.isMovieStart = false
-                        }
+                            globalStore.turnOffIsMovieStart()
+                    }
                 }
             }
         }
-
     }
 }
 

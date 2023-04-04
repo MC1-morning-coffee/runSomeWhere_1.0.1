@@ -82,3 +82,9 @@ extension GlobalStore {
         paddleCount += 1
     }
 }
+
+extension GlobalStore {
+    func turnOffIsMovieStart() {
+        isMovieStart = false
+    }
+}
