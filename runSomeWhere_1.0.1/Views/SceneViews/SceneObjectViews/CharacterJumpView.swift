@@ -17,7 +17,7 @@ struct CharacterJumpView: View {
                 .offset(x: 0, y: (isPeopleJumping ? 10 : 0))
                 .animation(Animation.linear(duration: 0.15)
                     .delay(0.1)
-                    .repeatCount(5, autoreverses: true))
+                    .repeatCount(5, autoreverses: true), value: isPeopleJumping)
                 .onAppear() {
                     isPeopleJumping = true
                 }
@@ -25,7 +25,7 @@ struct CharacterJumpView: View {
                  .position(x: 90, y: 460)
                  .offset(x: 0, y: (isPeopleJumping ? 10 : 0))
                  .animation(Animation.linear(duration: 0.2)
-                     .repeatCount(3, autoreverses: true))
+                     .repeatCount(3, autoreverses: true), value: isPeopleJumping)
                  .onAppear() {
                      isPeopleJumping = true
                  }
@@ -34,7 +34,7 @@ struct CharacterJumpView: View {
                  .offset(x: 0, y: (isPeopleJumping ? 10 : 0))
                  .animation(Animation.linear(duration: 0.15)
                     .delay(0.2)
-                     .repeatCount(5, autoreverses: true))
+                     .repeatCount(5, autoreverses: true), value: isPeopleJumping)
                  .onAppear() {
                      isPeopleJumping = true
                  }
@@ -43,7 +43,7 @@ struct CharacterJumpView: View {
                  .offset(x: 0, y: (isPeopleJumping ? 10 : 0))
                  .animation(Animation.linear(duration: 0.2)
                     .delay(0.1)
-                     .repeatCount(7, autoreverses: true))
+                     .repeatCount(7, autoreverses: true), value: isPeopleJumping)
                  .onAppear() {
                      isPeopleJumping = true
                  }
@@ -52,7 +52,7 @@ struct CharacterJumpView: View {
                  .offset(x: 0, y: (isPeopleJumping ? 10 : 0))
                  .animation(Animation.linear(duration: 0.15)
                     .delay(0.3)
-                     .repeatCount(5, autoreverses: true))
+                     .repeatCount(5, autoreverses: true), value: isPeopleJumping)
                  .onAppear() {
                      isPeopleJumping = true
                  }
@@ -60,7 +60,7 @@ struct CharacterJumpView: View {
                  .position(x: 340, y: 410)
                  .offset(x: 0, y: (isPeopleJumping ? 10 : 0))
                  .animation(Animation.linear(duration: 0.2)
-                     .repeatCount(5, autoreverses: true))
+                     .repeatCount(5, autoreverses: true), value: isPeopleJumping)
                  .onAppear() {
                      isPeopleJumping = true
                  }

@@ -9,18 +9,8 @@ import Foundation
 
 class FaceStore: ObservableObject {
     
-    private let faceViewInfo = FACE_VIEW_INFO(size: CGSize(width: 150, height: 200), srcRoot: "Face")
-    
-    init() {
-        self.faceViewSize = faceViewInfo.size
-        self.faceViewSrcRoot = faceViewInfo.srcRoot
-    }
-    
     @Published
-    var faceViewSize: CGSize
-    
-    @Published
-    var faceViewSrcRoot: String
+    var faceViewInfo = FACE_VIEW_INFO(size: CGSize(width: 150, height: 200), srcRoot: "Face")
     
     @Published
     var currentFaces: [Speaker] = [.system]

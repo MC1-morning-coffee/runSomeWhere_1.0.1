@@ -60,7 +60,17 @@
 		A9BA63DF29DC408A006FBD69 /* PaddleButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9BA63DE29DC408A006FBD69 /* PaddleButtonView.swift */; };
 		A9BA63E229DC40CC006FBD69 /* SelectCharcterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9BA63E129DC40CC006FBD69 /* SelectCharcterView.swift */; };
 		A9BA63E429DC40EB006FBD69 /* ButtonSelectCharcterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9BA63E329DC40EB006FBD69 /* ButtonSelectCharcterView.swift */; };
-		A9BA63E729DC43A1006FBD69 /* SequenceOpeningHanlder.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9BA63E629DC43A1006FBD69 /* SequenceOpeningHanlder.swift */; };
+		A9BA63E729DC43A1006FBD69 /* SequenceOpeningHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9BA63E629DC43A1006FBD69 /* SequenceOpeningHandler.swift */; };
+		A9BA63E929DC63B8006FBD69 /* SequenceThreeHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9BA63E829DC63B8006FBD69 /* SequenceThreeHandler.swift */; };
+		A9BA63EB29DC674E006FBD69 /* SequenceOneHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9BA63EA29DC674E006FBD69 /* SequenceOneHandler.swift */; };
+		A9BA63ED29DC6758006FBD69 /* SequenceTwoHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9BA63EC29DC6758006FBD69 /* SequenceTwoHandler.swift */; };
+		A9BA63EF29DC6765006FBD69 /* SequenceEndingHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9BA63EE29DC6765006FBD69 /* SequenceEndingHandler.swift */; };
+		A9BA63F129DC68E7006FBD69 /* QuizModalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9BA63F029DC68E7006FBD69 /* QuizModalView.swift */; };
+		A9BA63F429DC6928006FBD69 /* QuizModalContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9BA63F329DC6928006FBD69 /* QuizModalContainerView.swift */; };
+		A9BA63F629DC69AB006FBD69 /* QuizButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9BA63F529DC69AB006FBD69 /* QuizButtonView.swift */; };
+		A9BA63F829DC69B3006FBD69 /* QuizButtonView1.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9BA63F729DC69B3006FBD69 /* QuizButtonView1.swift */; };
+		A9BA63FA29DC6C40006FBD69 /* QuestionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9BA63F929DC6C40006FBD69 /* QuestionView.swift */; };
+		A9BA63FC29DC6C8D006FBD69 /* AnswerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9BA63FB29DC6C8D006FBD69 /* AnswerView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -139,7 +149,17 @@
 		A9BA63DE29DC408A006FBD69 /* PaddleButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaddleButtonView.swift; sourceTree = "<group>"; };
 		A9BA63E129DC40CC006FBD69 /* SelectCharcterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectCharcterView.swift; sourceTree = "<group>"; };
 		A9BA63E329DC40EB006FBD69 /* ButtonSelectCharcterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonSelectCharcterView.swift; sourceTree = "<group>"; };
-		A9BA63E629DC43A1006FBD69 /* SequenceOpeningHanlder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SequenceOpeningHanlder.swift; sourceTree = "<group>"; };
+		A9BA63E629DC43A1006FBD69 /* SequenceOpeningHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SequenceOpeningHandler.swift; sourceTree = "<group>"; };
+		A9BA63E829DC63B8006FBD69 /* SequenceThreeHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SequenceThreeHandler.swift; sourceTree = "<group>"; };
+		A9BA63EA29DC674E006FBD69 /* SequenceOneHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SequenceOneHandler.swift; sourceTree = "<group>"; };
+		A9BA63EC29DC6758006FBD69 /* SequenceTwoHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SequenceTwoHandler.swift; sourceTree = "<group>"; };
+		A9BA63EE29DC6765006FBD69 /* SequenceEndingHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SequenceEndingHandler.swift; sourceTree = "<group>"; };
+		A9BA63F029DC68E7006FBD69 /* QuizModalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizModalView.swift; sourceTree = "<group>"; };
+		A9BA63F329DC6928006FBD69 /* QuizModalContainerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizModalContainerView.swift; sourceTree = "<group>"; };
+		A9BA63F529DC69AB006FBD69 /* QuizButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizButtonView.swift; sourceTree = "<group>"; };
+		A9BA63F729DC69B3006FBD69 /* QuizButtonView1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizButtonView1.swift; sourceTree = "<group>"; };
+		A9BA63F929DC6C40006FBD69 /* QuestionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionView.swift; sourceTree = "<group>"; };
+		A9BA63FB29DC6C8D006FBD69 /* AnswerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnswerView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -260,6 +280,7 @@
 		A940C0DF29DBACD400B98857 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				A9BA63F229DC68EE006FBD69 /* QuizModalViews */,
 				A9B777E029DBFB0F00E284DC /* SceneViews */,
 				A9151BF029DBD00E007AF154 /* ScriptBoxViews */,
 				A940C0E529DBAE0D00B98857 /* ComponentViews */,
@@ -507,9 +528,26 @@
 		A9BA63E529DC4356006FBD69 /* SequenceHandlers */ = {
 			isa = PBXGroup;
 			children = (
-				A9BA63E629DC43A1006FBD69 /* SequenceOpeningHanlder.swift */,
+				A9BA63E629DC43A1006FBD69 /* SequenceOpeningHandler.swift */,
+				A9BA63EA29DC674E006FBD69 /* SequenceOneHandler.swift */,
+				A9BA63EC29DC6758006FBD69 /* SequenceTwoHandler.swift */,
+				A9BA63E829DC63B8006FBD69 /* SequenceThreeHandler.swift */,
+				A9BA63EE29DC6765006FBD69 /* SequenceEndingHandler.swift */,
 			);
 			path = SequenceHandlers;
+			sourceTree = "<group>";
+		};
+		A9BA63F229DC68EE006FBD69 /* QuizModalViews */ = {
+			isa = PBXGroup;
+			children = (
+				A9BA63F029DC68E7006FBD69 /* QuizModalView.swift */,
+				A9BA63F329DC6928006FBD69 /* QuizModalContainerView.swift */,
+				A9BA63F529DC69AB006FBD69 /* QuizButtonView.swift */,
+				A9BA63F729DC69B3006FBD69 /* QuizButtonView1.swift */,
+				A9BA63F929DC6C40006FBD69 /* QuestionView.swift */,
+				A9BA63FB29DC6C8D006FBD69 /* AnswerView.swift */,
+			);
+			path = QuizModalViews;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -646,16 +684,21 @@
 				A940C0B729DBA0F300B98857 /* ContentView.swift in Sources */,
 				A95CCC7429DC0EBD00350C76 /* SequenceBlinkView.swift in Sources */,
 				A940C0FC29DBB4AD00B98857 /* Shared.swift in Sources */,
+				A9BA63E929DC63B8006FBD69 /* SequenceThreeHandler.swift in Sources */,
 				A95CCC9629DC133400350C76 /* WindReverseView.swift in Sources */,
 				A940C0EC29DBAF0500B98857 /* CustomFont.swift in Sources */,
+				A9BA63FC29DC6C8D006FBD69 /* AnswerView.swift in Sources */,
 				A95CCC8E29DC12A100350C76 /* CharacterView2.swift in Sources */,
 				A95CCC8C29DC125400350C76 /* CharacterView.swift in Sources */,
 				A940C10129DBB9E300B98857 /* ScriptHandler.swift in Sources */,
 				A95CCC8829DC122300350C76 /* AutoDoorView.swift in Sources */,
 				A9151BE929DBC4BB007AF154 /* FaceHandler.swift in Sources */,
+				A9BA63F829DC69B3006FBD69 /* QuizButtonView1.swift in Sources */,
 				A9B777E729DC0C8200E284DC /* SceneBackgroundView.swift in Sources */,
+				A9BA63FA29DC6C40006FBD69 /* QuestionView.swift in Sources */,
 				A9BA63E429DC40EB006FBD69 /* ButtonSelectCharcterView.swift in Sources */,
 				A95CCC7E29DC0EFE00350C76 /* SequenceThreeChildView.swift in Sources */,
+				A9BA63F129DC68E7006FBD69 /* QuizModalView.swift in Sources */,
 				A9BA63E229DC40CC006FBD69 /* SelectCharcterView.swift in Sources */,
 				A940C10729DBC15600B98857 /* SceneHandler.swift in Sources */,
 				A940C0F729DBB0D600B98857 /* ScriptModel.swift in Sources */,
@@ -664,6 +707,7 @@
 				A940C0B529DBA0F300B98857 /* runSomeWhere_1_0_1App.swift in Sources */,
 				A95CCC9029DC12D400350C76 /* JolJolView.swift in Sources */,
 				A95CCC7829DC0ED500350C76 /* SequenceIntroView.swift in Sources */,
+				A9BA63EF29DC6765006FBD69 /* SequenceEndingHandler.swift in Sources */,
 				A940C0E929DBAEE300B98857 /* CustomColor.swift in Sources */,
 				A9B777E229DBFB3500E284DC /* SceneView.swift in Sources */,
 				A95CCC8A29DC123900350C76 /* CharacterJumpView.swift in Sources */,
@@ -672,8 +716,10 @@
 				A9151BF229DBD028007AF154 /* CursorView.swift in Sources */,
 				A940C0F229DBAF8800B98857 /* setTimeout.swift in Sources */,
 				A9B777DA29DBF36300E284DC /* ScriptBoxView.swift in Sources */,
+				A9BA63ED29DC6758006FBD69 /* SequenceTwoHandler.swift in Sources */,
 				A95CCC8229DC0F1500350C76 /* SequenceTwoView.swift in Sources */,
 				A940C0F429DBAFD800B98857 /* safeArea.swift in Sources */,
+				A9BA63F429DC6928006FBD69 /* QuizModalContainerView.swift in Sources */,
 				A95CCC8529DC114900350C76 /* DetailPopupView.swift in Sources */,
 				A9B777DC29DBF45D00E284DC /* String+Ex.swift in Sources */,
 				A95CCC9829DC134700350C76 /* WindView.swift in Sources */,
@@ -684,12 +730,14 @@
 				A9151BED29DBCA06007AF154 /* CustomText.swift in Sources */,
 				A9151BE729DBC459007AF154 /* GlobalHandler.swift in Sources */,
 				A940C10A29DBC23200B98857 /* QuizModel.swift in Sources */,
+				A9BA63F629DC69AB006FBD69 /* QuizButtonView.swift in Sources */,
 				A95CCC9429DC131600350C76 /* ShipView.swift in Sources */,
 				A9151BEB29DBC84A007AF154 /* DetailPopupHandler.swift in Sources */,
 				A95CCC7C29DC0EEF00350C76 /* SequenceOpeningView.swift in Sources */,
 				A9151BEF29DBCBEB007AF154 /* UserModel.swift in Sources */,
+				A9BA63EB29DC674E006FBD69 /* SequenceOneHandler.swift in Sources */,
 				A940C0F029DBAF5700B98857 /* setTimeInterval.swift in Sources */,
-				A9BA63E729DC43A1006FBD69 /* SequenceOpeningHanlder.swift in Sources */,
+				A9BA63E729DC43A1006FBD69 /* SequenceOpeningHandler.swift in Sources */,
 				A9B777E529DC0B0200E284DC /* FaceView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

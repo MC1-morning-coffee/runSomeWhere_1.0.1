@@ -10,7 +10,12 @@ import AVFoundation
 import Combine
 
 struct SequenceEndingView: View {
-    @EnvironmentObject var globalStore: GlobalStore
+    
+    @EnvironmentObject
+    var globalStore: GlobalStore
+    
+    @EnvironmentObject
+    var scriptStore: ScriptStore
     
     @State private var word1 = false
     @State private var word2 = false
@@ -81,15 +86,15 @@ struct SequenceEndingView: View {
             return
         }
         
-        if !globalStore.isTapAble{
+        if !scriptStore.isTapAble{
             return
         }
-        if globalStore.scriptCount == globalStore.currentScripts.count - 1 {
+        if globalStore.scriptCount == scriptStore.currentScripts.count - 1 {
             currentSceneCount += 1
             if currentSceneCount > 4 {
                 return
             }
-            globalStore.updateCurrentScene(scene: .allCases[currentSceneCount])
+            globalStore.updateCurrentSequence(sequence: .allCases[currentSceneCount])
             globalStore.resetScriptCount()
         }else{
             globalStore.scriptCount += 1

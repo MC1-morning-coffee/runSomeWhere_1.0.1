@@ -30,17 +30,17 @@ struct ContentView: View {
                         .zIndex(1)
                         .offset(y: geo.size.height - scriptStore.scriptBoxHeight)
                 }
-//                if globalStore.isQuizSequence {
-//                    QuizModalContainerView()
-//                        .offset(y: geo.size.height - SCRIPT_BOX_HEIGHT)
-//                        .frame(width: geo.size.width, height: SCRIPT_BOX_HEIGHT)
-//                }
-//                if globalStore.isMovieStart {
-//                    SequenceIntroView()
-//                        .onTapGesture {
-//                            globalStore.isMovieStart = false
-//                        }
-//                }
+                if globalStore.isQuizSequence {
+                    QuizModalContainerView()
+                        .offset(y: geo.size.height - scriptStore.scriptBoxHeight)
+                        .frame(width: geo.size.width, height: scriptStore.scriptBoxHeight)
+                }
+                if globalStore.isMovieStart {
+                    SequenceIntroView()
+                        .onTapGesture {
+                            globalStore.isMovieStart = false
+                        }
+                }
             }
         }
 
@@ -49,9 +49,7 @@ struct ContentView: View {
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        let globalStore = GlobalStore()
         ContentView()
-            .environmentObject(globalStore)
             .previewDevice(PreviewDevice(rawValue: "iPhone 14"))
             .previewDisplayName("iPhone 14")
         

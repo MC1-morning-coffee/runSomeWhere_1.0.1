@@ -7,13 +7,12 @@
 
 import Foundation
 
-
 class SequenceOpeningStore: ObservableObject {
     
-    func handleSequenceSelectCharcter(globalStore: GlobalStore) {
+    func handleSequenceSelectCharcter(globalStore: GlobalStore, scriptStore: ScriptStore, detailPopupStore: DetailPopupStore) {
         globalStore.turnOffIsSelectCharcterViewActive()
-        globalStore.turnOffIsPopupActive() // false
+        detailPopupStore.turnOffIsPopupActive()
+        scriptStore.turnOnIsTapAble()
         globalStore.addScriptCount()
-        globalStore.turnOnIsTapAble()
     }
 }

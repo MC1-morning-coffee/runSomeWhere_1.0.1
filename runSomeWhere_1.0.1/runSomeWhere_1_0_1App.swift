@@ -15,6 +15,7 @@ struct runSomeWhere_1_0_1App: App {
     let sceneStore = SceneStore()
     let faceStore = FaceStore()
     let quizStore = QuizStore()
+    let detailPopupStore = DetailPopupStore()
         
     var body: some Scene {
         WindowGroup {
@@ -24,6 +25,7 @@ struct runSomeWhere_1_0_1App: App {
                 .environmentObject(sceneStore)
                 .environmentObject(faceStore)
                 .environmentObject(quizStore)
+                .environmentObject(detailPopupStore)
                 .onAppear{
                     let safeAreaSize = getSafeAreaSize()
                     globalStore.updateSafeAreaSize(currentSafeAreaSize: safeAreaSize)

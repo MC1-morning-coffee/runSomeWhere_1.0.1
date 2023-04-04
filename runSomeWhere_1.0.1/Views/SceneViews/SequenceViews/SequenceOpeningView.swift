@@ -103,10 +103,10 @@ struct SequenceOpeningView: View {
                 //                    backgroundMusicPlayer?.play()
             case 0 :
                 let musicFileName = backgroundMusicFiles[0] // count starts at 1, but array index starts at 0
-                let musicFileUrl = Bundle.main.url(forResource: musicFileName, withExtension: musicFileExtension)!
-                backgroundMusicPlayer = AVPlayer(url: musicFileUrl)
-                backgroundMusicPlayer?.volume = volume
-                backgroundMusicPlayer?.play()
+//                let musicFileUrl = Bundle.main.url(forResource: musicFileName, withExtension: musicFileExtension)!
+//                backgroundMusicPlayer = AVPlayer(url: musicFileUrl)
+//                backgroundMusicPlayer?.volume = volume
+//                backgroundMusicPlayer?.play()
 //
 //            case 3 :
 //                backgroundMusicPlayer?.pause()

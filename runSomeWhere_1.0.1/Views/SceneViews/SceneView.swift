@@ -41,7 +41,7 @@ struct SceneView: View {
                 }
                 if faceStore.isFaceViewActive {
                     let facePositionY = deviceHeight
-                    - faceStore.faceViewSize.height
+                    - faceStore.faceViewInfo.size.height
                     FaceView(direction: "right", target: faceStore.currentFaces[0])
                         .animation(.linear(duration: 0.4), value: faceStore.rightFaceViewPositionX)
                         .offset(x: faceStore.rightFaceViewPositionX, y: facePositionY)

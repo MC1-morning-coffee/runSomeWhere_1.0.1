@@ -14,6 +14,9 @@ struct SequenceThreeView: View {
     @EnvironmentObject
     var globalStore: GlobalStore
     
+    @StateObject
+    var sequenceThreeStore = SequenceThreeStore()
+    
     let backgroundMusicFiles = ["BGM_Adventure_Explore"]
     let soundEffectFiles = ["Walk", "SFX_SeqThree_sounds_powerup10", "SFX_SeqThree_coin_cluster3", "SFX_SeqThree_menu_select4", "SFX_SeqThree_sound_mechanicalnoise4", "SFX_SeqThree_lowhealth_alarmloop6", "SFX_SeqThree_sounds_fanfare3"] // add the names of your sound effect files here
     let musicFileExtension = "wav" // add the extension of your music files here
@@ -159,7 +162,7 @@ struct SequenceThreeView: View {
             SequenceThreeChildView(isPeopleMoving1: $isPeopleMoving1, isDrawingActive: $isDrawingActive, isWoodFabricActive: $isWoodFabricActive,isWoodMove: $isWoodMove, isFabricMove: $isFabricMove, isDrawingMove: $isDrawingMove, isBoatActive: $isBoatActive, isPeopleMoving2: $isPeopleMoving2, isPeopleOnBoat: $isPeopleOnBoat, isMagicCircleOn: $isMagicCircleOn)
             
             if isPaddleOn {
-                PaddleButtonView()
+                PaddleButtonView(sequenceThreeStore: sequenceThreeStore)
             }
             
             if isPeopleMoving3 {

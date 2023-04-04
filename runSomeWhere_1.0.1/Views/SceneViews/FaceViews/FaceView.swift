@@ -10,14 +10,14 @@ import SwiftUI
 struct FaceView: View {
     
     @EnvironmentObject
-    var sceneStore: SceneStore
+    var faceStore: FaceStore
     
     var direction = "left"
     var target = Speaker.coffee
 
     var body: some View {
-        Image("\(sceneStore.faceViewSrcRoot)_\(target)".capitalized)
-            .frame(width: sceneStore.faceViewSize.width, height: sceneStore.faceViewSize.height)
+        Image("\(faceStore.faceViewInfo.srcRoot)_\(target)".capitalized)
+            .frame(width: faceStore.faceViewInfo.size.width, height: faceStore.faceViewInfo.size.height)
     }
 }
 

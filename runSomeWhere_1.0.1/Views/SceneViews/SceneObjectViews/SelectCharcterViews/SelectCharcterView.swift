@@ -22,6 +22,9 @@ struct SelectCharcterView: View {
     @EnvironmentObject
     var scriptStore: ScriptStore
     
+    @EnvironmentObject
+    var detailPopupStore: DetailPopupStore
+    
     @StateObject
     var sequenceOpeningStore = SequenceOpeningStore()
     
@@ -29,7 +32,7 @@ struct SelectCharcterView: View {
     private let charcters: [Charcter] = [.walker, .coffee, .luna, .olive, .muho, .henry]
     
     private func handleSelectAnswer() {
-        sequenceOpeningStore.handleSequenceSelectCharcter(globalStore: globalStore)
+        sequenceOpeningStore.handleSequenceSelectCharcter(globalStore: globalStore, scriptStore: scriptStore, detailPopupStore: detailPopupStore)
     }
     
     private let gridColumns = [GridItem(),GridItem()]
@@ -38,8 +41,6 @@ struct SelectCharcterView: View {
         GeometryReader { geo in
             ZStack(alignment: .topLeading) {
                 let offset = CGFloat(16)
-                
-                // Background Image
                 Image(SCRIPT_BOX_VIEW_BACKGROUND_IMAGE)
                     .zIndex(-1)
                     .offset(y: offset)
@@ -60,9 +61,6 @@ struct SelectCharcterView: View {
             .padding(16)
             .frame(width: width, height: scriptStore.scriptBoxHeight)
             .background(CustomColor.scriptBox)
-            .onTapGesture {
-                print("SelectCharcter")
-            }
         }
     }
 }

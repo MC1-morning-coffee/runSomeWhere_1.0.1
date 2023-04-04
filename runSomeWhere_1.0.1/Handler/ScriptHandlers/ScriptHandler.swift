@@ -32,10 +32,10 @@ class ScriptStore: ObservableObject {
     var cursorSize: CGFloat
     
     @Published
-    var isTapAble = false
+    var isTapAble = true
     
     @Published
-    var isScriptBoxActive = false
+    var isScriptBoxActive = true
     
     @Published
     var value = ""
@@ -107,5 +107,11 @@ extension ScriptStore {
             globalStore.scriptCount += 1
         }
         sceneStore.handleSequenceEvent(globalStore: globalStore)
+    }
+}
+
+extension ScriptStore {
+    func turnOnIsTapAble() {
+        isTapAble = true
     }
 }

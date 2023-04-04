@@ -27,6 +27,12 @@ class GlobalStore: ObservableObject {
     
     @Published
     var isSelectCharcterViewActive = false
+    
+    @Published
+    var isQuizSequence = false
+    
+    @Published
+    var isMovieStart = true
 }
 
 extension GlobalStore {
@@ -55,5 +61,11 @@ extension GlobalStore {
 extension GlobalStore {
     func turnOffIsSelectCharcterViewActive() {
         isSelectCharcterViewActive = false
+    }
+}
+
+extension GlobalStore {
+    func turnOffIsQuizSequence() {
+        isQuizSequence = false
     }
 }
