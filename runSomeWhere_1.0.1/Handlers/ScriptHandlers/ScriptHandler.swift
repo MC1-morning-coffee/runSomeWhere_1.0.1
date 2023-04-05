@@ -75,10 +75,15 @@ extension ScriptStore {
                 self.tmpText.append(self.value[position])
                 self.typeWriter(at: position + 1)
             }
+            
+            if "\(tmpText)\(value[position])" == value {
+                turnOnIsTapAble()
+            }
         }
     }
     
     func updateScriptText(currentCount: Int) {
+        turnOffIsTapAble()
         value = currentScripts[currentCount].1
         typeWriter()
     }
