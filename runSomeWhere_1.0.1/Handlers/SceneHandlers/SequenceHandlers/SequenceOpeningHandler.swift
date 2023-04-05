@@ -10,7 +10,6 @@ import Foundation
 extension SceneStore {
     func handleSequenceOpening(globalStore: GlobalStore, scriptStore: ScriptStore, sceneStore: SceneStore, faceStore: FaceStore, quizStore: QuizStore, detailPopupStore: DetailPopupStore) {
         let scriptCount = globalStore.scriptCount
-        
         switch scriptCount {
             case 7:
                 detailPopupStore.updateCurrentDetailImage(detailImage: .CBL)

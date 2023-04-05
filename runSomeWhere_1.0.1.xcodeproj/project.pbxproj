@@ -51,7 +51,7 @@
 		A95CCC9629DC133400350C76 /* WindReverseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A95CCC9529DC133400350C76 /* WindReverseView.swift */; };
 		A95CCC9829DC134700350C76 /* WindView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A95CCC9729DC134700350C76 /* WindView.swift */; };
 		A9B777DA29DBF36300E284DC /* ScriptBoxView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9B777D929DBF36300E284DC /* ScriptBoxView.swift */; };
-		A9B777DC29DBF45D00E284DC /* String+Ex.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9B777DB29DBF45D00E284DC /* String+Ex.swift */; };
+		A9B777DC29DBF45D00E284DC /* Ex+String.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9B777DB29DBF45D00E284DC /* Ex+String.swift */; };
 		A9B777DE29DBFA5B00E284DC /* morris9.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A9B777DD29DBFA5B00E284DC /* morris9.ttf */; };
 		A9B777E229DBFB3500E284DC /* SceneView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9B777E129DBFB3500E284DC /* SceneView.swift */; };
 		A9B777E529DC0B0200E284DC /* FaceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9B777E429DC0B0200E284DC /* FaceView.swift */; };
@@ -138,7 +138,7 @@
 		A95CCC9529DC133400350C76 /* WindReverseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WindReverseView.swift; sourceTree = "<group>"; };
 		A95CCC9729DC134700350C76 /* WindView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WindView.swift; sourceTree = "<group>"; };
 		A9B777D929DBF36300E284DC /* ScriptBoxView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScriptBoxView.swift; sourceTree = "<group>"; };
-		A9B777DB29DBF45D00E284DC /* String+Ex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Ex.swift"; sourceTree = "<group>"; };
+		A9B777DB29DBF45D00E284DC /* Ex+String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Ex+String.swift"; sourceTree = "<group>"; };
 		A9B777DD29DBFA5B00E284DC /* morris9.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = morris9.ttf; path = runSomeWhere_1.0.1/Assets.xcassets/morris9.dataset/morris9.ttf; sourceTree = SOURCE_ROOT; };
 		A9B777DF29DBFA9D00E284DC /* runSomeWhere-1-0-1-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "runSomeWhere-1-0-1-Info.plist"; sourceTree = SOURCE_ROOT; };
 		A9B777E129DBFB3500E284DC /* SceneView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneView.swift; sourceTree = "<group>"; };
@@ -242,7 +242,7 @@
 				A940C0E329DBAD2C00B98857 /* Extensions */,
 				A940C0E429DBADEC00B98857 /* Style */,
 				A940C0E029DBACDD00B98857 /* Models */,
-				A940C0E229DBACFA00B98857 /* Handler */,
+				A940C0E229DBACFA00B98857 /* Handlers */,
 				A940C0DF29DBACD400B98857 /* Views */,
 				A940C0BA29DBA0F400B98857 /* Preview Content */,
 			);
@@ -306,7 +306,7 @@
 			path = Utils;
 			sourceTree = "<group>";
 		};
-		A940C0E229DBACFA00B98857 /* Handler */ = {
+		A940C0E229DBACFA00B98857 /* Handlers */ = {
 			isa = PBXGroup;
 			children = (
 				A9151BE429DBC423007AF154 /* GlobalHandlers */,
@@ -314,13 +314,13 @@
 				A940C10529DBC14500B98857 /* SceneHandlers */,
 				A940C0FF29DBB9C700B98857 /* ScriptHandlers */,
 			);
-			path = Handler;
+			path = Handlers;
 			sourceTree = "<group>";
 		};
 		A940C0E329DBAD2C00B98857 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
-				A9B777DB29DBF45D00E284DC /* String+Ex.swift */,
+				A9B777DB29DBF45D00E284DC /* Ex+String.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -701,7 +701,7 @@
 				A940C0F429DBAFD800B98857 /* safeArea.swift in Sources */,
 				A9BA63F429DC6928006FBD69 /* QuizModalContainerView.swift in Sources */,
 				A95CCC8529DC114900350C76 /* DetailPopupView.swift in Sources */,
-				A9B777DC29DBF45D00E284DC /* String+Ex.swift in Sources */,
+				A9B777DC29DBF45D00E284DC /* Ex+String.swift in Sources */,
 				A95CCC9829DC134700350C76 /* WindView.swift in Sources */,
 				A940C10D29DBC28C00B98857 /* QuizHanlder.swift in Sources */,
 				A95CCC7629DC0ECB00350C76 /* SequenceEndingView.swift in Sources */,

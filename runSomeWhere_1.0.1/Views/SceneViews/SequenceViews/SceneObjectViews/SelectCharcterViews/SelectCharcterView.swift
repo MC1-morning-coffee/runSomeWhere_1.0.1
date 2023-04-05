@@ -65,6 +65,7 @@ struct SelectCharcterView: View {
     }
 }
 
+// MARK: hello
 struct SelectCharcterView_Previews: PreviewProvider {
     static var previews: some View {
         SelectCharcterView()
