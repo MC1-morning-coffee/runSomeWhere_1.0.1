@@ -40,20 +40,20 @@ struct SceneView: View {
                         .transition(.asymmetric(insertion: .opacity.animation(.linear(duration: 0.4)), removal: .opacity.animation(.linear(duration: 0.4))))
                 }
                 if faceStore.isFaceViewActive {
-                    let facePositionY = deviceHeight
-                    - faceStore.faceViewInfo.size.height
-                    FaceView(direction: "right", target: faceStore.currentFaces[0])
-                        .animation(.linear(duration: 0.4), value: faceStore.rightFaceViewPositionX)
-                        .offset(x: faceStore.rightFaceViewPositionX, y: facePositionY)
+                    FaceView(target: faceStore.currentFaces[0]
+                    )
                     if faceStore.currentFaces.count > 1 {
                         FaceView(direction: "left", target: faceStore.currentFaces[1])
-                            .animation(.linear(duration: 0.4), value: faceStore.leftFaceViewPositionX)
-                            .offset(x: faceStore.leftFaceViewPositionX, y: facePositionY)
                     }
                 }
             }
             .frame(width: deviceWidth, height: deviceHeight)
             .background(Color.black)
+            .onAppear{
+                // MARK: faceView 최초 포지션 설정
+                faceStore.updateRightFaceViewPositionX(value: deviceWidth)
+                faceStore.updateLeftFaceViewPositionX(value: -faceStore.faceViewInfo.size.width)
+            }
         }
     }
 }

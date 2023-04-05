@@ -82,9 +82,10 @@ extension ScriptStore {
         }
     }
     
-    func updateScriptText(currentCount: Int) {
+    func updateScriptText(currentCount: Int, faceStore: FaceStore) {
         turnOffIsTapAble()
         value = currentScripts[currentCount].1
+        faceStore.currentFaces = currentScripts[currentCount].0
         typeWriter()
     }
 }
@@ -110,6 +111,7 @@ extension ScriptStore {
             globalStore.resetScriptCount()
         }else{
             globalStore.addScriptCount()
+            
         }
         sceneStore.handleSequenceEvent(globalStore: globalStore, scriptStore: scriptStore, sceneStore: sceneStore, faceStore: faceStore, quizStore: quizStore, detailPopupStore: detailPopupStore)
     }
