@@ -8,7 +8,7 @@
 import Foundation
 import SwiftUI
 
-enum Charcter {
+enum Player {
     case coffee
     case walker
     case luna
@@ -17,8 +17,13 @@ enum Charcter {
     case olive
 }
 
-extension Charcter {
-    var personalColor: String {
+extension Player {
+    
+    func getImageSrc(){
+        
+    }
+    
+    var keyColor: String {
         switch self {
         case .coffee:
             return "빨강"
@@ -34,23 +39,6 @@ extension Charcter {
             return "보라"
         }
     }
-    
-    var personalUIColor: UIColor {
-        switch self {
-        case .coffee:
-            return .red
-        case .walker:
-            return .green
-        case .luna:
-            return .yellow
-        case .henry:
-            return .blue
-        case .muho:
-            return .orange
-        case .olive:
-            return .purple
-        }
-    }
 }
 
 
@@ -64,7 +52,6 @@ struct User {
 }
 
 // 모든 user에 대한 정보
-
 var henry = User(id: 1, name: "Henry_", direction: CharcterDirection.Front, isShown: false, coord: (100.0, 100.0))
 var olive = User(id: 2, name: "Olive_", direction: CharcterDirection.Front, isShown: false, coord: (100.0, 100.0))
 var luna = User(id: 3, name: "Luna_", direction: CharcterDirection.Back_1, isShown: true, coord: (100.0, 100.0))

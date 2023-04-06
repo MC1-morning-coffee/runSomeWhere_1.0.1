@@ -33,3 +33,35 @@ extension SceneStore {
         globalStore.addScriptCount()
     }
 }
+
+class SequenceOpeningStore: ObservableObject {
+    
+    @Published
+    var isCharcterActive = false
+    
+    @Published
+    var isBackgroundBlackActive = true
+    
+    @Published
+    var isCharcterMove: Bool? = nil
+    
+    
+    
+    func handleSequenceInteraction(scriptCount: Int) {
+        switch scriptCount {
+            
+        case 3:
+            setTimeoutClosure(timeCount: 1500) {
+                self.isBackgroundBlackActive = false
+                self.isCharcterMove = false
+            }
+        case 11:
+            self.isCharcterMove = true
+        case 12:
+            self.isCharcterMove = nil
+        default:
+            print("scriptCount: ", scriptCount)
+            
+        }
+    }
+}
