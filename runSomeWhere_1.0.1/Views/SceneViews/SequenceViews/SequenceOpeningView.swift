@@ -20,12 +20,12 @@ struct SequenceOpeningView: View {
     typealias PlayerInfo = (Player, (Float, Float), (Float, Float))
         
     var staticCharcters: [PlayerInfo] = [
-        (.walker, (80.0, 550.0), (0.0, 0.0)),
-        (.luna, (80.0, 550.0), (0.0, 0.0)),
-        (.muho, (80.0, 550.0), (0.0, 0.0)),
-        (.coffee, (80.0, 550.0), (0.0, 0.0)),
-        (.olive, (80.0, 550.0), (0.0, 0.0)),
-        (.henry, (80.0, 550.0), (0.0, 0.0))
+        (.Walker, (80.0, 550.0), (0.0, 0.0)),
+        (.Luna, (80.0, 550.0), (0.0, 0.0)),
+        (.Muho, (80.0, 550.0), (0.0, 0.0)),
+        (.Coffee, (80.0, 550.0), (0.0, 0.0)),
+        (.Olive, (80.0, 550.0), (0.0, 0.0)),
+        (.Henry, (80.0, 550.0), (0.0, 0.0))
     ]
     
     var dynamicCharcters: [PlayerInfo] = [
@@ -35,12 +35,12 @@ struct SequenceOpeningView: View {
         ZStack(alignment: .topLeading){
             if sequenceOpeningStore.isCharcterMove == false {
                 ZStack{
-                    CharacterView(objectName: walker.name, makeDirection: CharcterDirection.Back_2, start: (80.0, 550.0), end: (0.0, 0.0))
-                    CharacterView(objectName: luna.name, makeDirection: CharcterDirection.Back_2, start: (124.0, 560.0), end: (0.0, 0.0))
-                    CharacterView(objectName: muho.name, makeDirection: CharcterDirection.Back_2, start: (168.0, 540.0), end: (0.0, 0.0))
-                    CharacterView(objectName: coffee.name, makeDirection: CharcterDirection.Back_2, start: (222.0, 560.0), end: (0.0, 0.0))
-                    CharacterView(objectName: olive.name, makeDirection: CharcterDirection.Back_2, start: (266.0, 570.0), end: (0.0, 0.0))
-                    CharacterView(objectName: henry.name, makeDirection: CharcterDirection.Back_2, start: (310.0, 540.0), end: (0.0, 0.0))
+                    CharacterView(objectName: .Walker, makeDirection: .Back_2, durationNumber: true,  start: (80.0, 550.0), end: (0.0, 0.0))
+                    CharacterView(objectName: .Luna, makeDirection: CharcterDirection.Back_2, durationNumber: true, start: (124.0, 560.0), end: (0.0, 0.0))
+                    CharacterView(objectName: .Muho, makeDirection: CharcterDirection.Back_2, durationNumber: true, start: (168.0, 540.0), end: (0.0, 0.0))
+                    CharacterView(objectName: .Coffee, makeDirection: CharcterDirection.Back_2, durationNumber: true, start: (222.0, 560.0), end: (0.0, 0.0))
+                    CharacterView(objectName: .Olive, makeDirection: CharcterDirection.Back_2, durationNumber: true, start: (266.0, 570.0), end: (0.0, 0.0))
+                    CharacterView(objectName: .Henry, makeDirection: CharcterDirection.Back_2, durationNumber: true, start: (310.0, 540.0), end: (0.0, 0.0))
                 }
                 if sequenceOpeningStore.isBackgroundBlackActive {
                     Image("Background_Black")
@@ -48,12 +48,12 @@ struct SequenceOpeningView: View {
                 }
             } else if sequenceOpeningStore.isCharcterMove == true {
                 ZStack{
-                    CharacterView(objectName: walker.name, makeDirection: CharcterDirection.Back_1, start: (80.0, 550.0), end: (-20.0, -420.0))
-                    CharacterView(objectName: luna.name, makeDirection: CharcterDirection.Back_1, start: (124.0, 560.0), end: (-10.0, -400.0))
-                    CharacterView(objectName: muho.name, makeDirection: CharcterDirection.Back_1, start: (168.0, 540.0), end: (0.0, -370.0))
-                    CharacterView(objectName: coffee.name, makeDirection: CharcterDirection.Back_1, start: (222.0, 560.0), end: (0.0, -410.0))
-                    CharacterView(objectName: olive.name, makeDirection: CharcterDirection.Back_1, start: (266.0, 570.0), end: (20.0, -400.0))
-                    CharacterView(objectName: henry.name, makeDirection: CharcterDirection.Back_1, start: (310.0, 540.0), end: (40.0, -370.0))
+                    CharacterView(objectName: .Walker, makeDirection: CharcterDirection.Back_1, durationNumber: true, start: (80.0, 550.0), end: (-20.0, -420.0))
+                    CharacterView(objectName: .Luna, makeDirection: CharcterDirection.Back_1, durationNumber: true, start: (124.0, 560.0), end: (-10.0, -400.0))
+                    CharacterView(objectName: .Muho, makeDirection: CharcterDirection.Back_1, durationNumber: true, start: (168.0, 540.0), end: (0.0, -370.0))
+                    CharacterView(objectName: .Coffee, makeDirection: CharcterDirection.Back_1, durationNumber: true, start: (222.0, 560.0), end: (0.0, -410.0))
+                    CharacterView(objectName: .Olive, makeDirection: CharcterDirection.Back_1, durationNumber: true, start: (266.0, 570.0), end: (20.0, -400.0))
+                    CharacterView(objectName: .Henry, makeDirection: CharcterDirection.Back_1, durationNumber: true, start: (310.0, 540.0), end: (40.0, -370.0))
                 }
             }
         }

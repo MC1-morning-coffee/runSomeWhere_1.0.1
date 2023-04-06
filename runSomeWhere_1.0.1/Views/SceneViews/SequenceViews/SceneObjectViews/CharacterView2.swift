@@ -86,7 +86,7 @@ struct CharacterView2: View {
 }
 struct CharacterView2_Previews: PreviewProvider {
     static var previews: some View {
-        CharacterView2(objectName: henry.name, makeDirection: CharcterDirection.Back_1, start: (0, 0), end: (195, 422))
+        CharacterView2(objectName: .Henry, makeDirection: CharcterDirection.Back_1, start: (0, 0), end: (195, 422))
     }
     
 }

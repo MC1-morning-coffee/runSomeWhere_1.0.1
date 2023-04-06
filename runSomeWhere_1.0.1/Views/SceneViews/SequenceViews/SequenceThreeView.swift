@@ -163,33 +163,33 @@ struct SequenceThreeView: View {
             }
             
             if isPeopleMoving3 {
-                CharacterView2(objectName: walker.name, makeDirection:
-                                isLastScene ? CharcterDirection.Front :  CharcterDirection.Back_1, start: (150, 320), end: (-100, 30))
-                CharacterView2(objectName: luna.name, makeDirection:
-                                isLastScene ? CharcterDirection.Front :  CharcterDirection.Back_1, start: (160, 330), end: (-70, 80))
-                CharacterView2(objectName: coffee.name, makeDirection:
-                                isLastScene ? CharcterDirection.Front :  CharcterDirection.Back_1, start: (180, 340), end: (-30, 100))
-                CharacterView2(objectName: muho.name, makeDirection:
-                                isLastScene ? CharcterDirection.Front :  CharcterDirection.Back_1, start: (190, 330), end: (20, 115))
-                CharacterView2(objectName: olive.name, makeDirection:
-                                isLastScene ? CharcterDirection.Front :  CharcterDirection.Back_1, start: (210, 340), end: (70, 60))
-                CharacterView2(objectName: henry.name, makeDirection:
-                                isLastScene ? CharcterDirection.Front :  CharcterDirection.Back_1, start: (230, 350), end: (110, 10))
+                CharacterView(objectName: .Walker, makeDirection:
+                                isLastScene ? CharcterDirection.Front :  CharcterDirection.Back_1, durationNumber: false, start: (150, 320), end: (-100, 30))
+                CharacterView(objectName: .Luna, makeDirection:
+                                isLastScene ? CharcterDirection.Front :  CharcterDirection.Back_1, durationNumber: false, start: (160, 330), end: (-70, 80))
+                CharacterView(objectName: .Coffee, makeDirection:
+                                isLastScene ? CharcterDirection.Front :  CharcterDirection.Back_1, durationNumber: false, start: (180, 340), end: (-30, 100))
+                CharacterView(objectName: .Muho, makeDirection:
+                                isLastScene ? CharcterDirection.Front :  CharcterDirection.Back_1, durationNumber: false, start: (190, 330), end: (20, 115))
+                CharacterView(objectName: .Olive, makeDirection:
+                                isLastScene ? CharcterDirection.Front :  CharcterDirection.Back_1, durationNumber: false, start: (210, 340), end: (70, 60))
+                CharacterView(objectName: .Henry, makeDirection:
+                                isLastScene ? CharcterDirection.Front :  CharcterDirection.Back_1, durationNumber: false, start: (230, 350), end: (110, 10))
             }
             
             if isLastScene {
-                CharacterView2(objectName: walker.name, makeDirection:
-                                CharcterDirection.Front, start: (50, 400), end: (0,0))
-                CharacterView2(objectName: luna.name, makeDirection:
-                                CharcterDirection.Front, start: (90, 460), end: (0,0))
-                CharacterView2(objectName: coffee.name, makeDirection:
-                                CharcterDirection.Front, start: (150, 490), end: (0,0))
-                CharacterView2(objectName: muho.name, makeDirection:
-                                CharcterDirection.Front, start: (210, 495), end: (0,0))
-                CharacterView2(objectName: olive.name, makeDirection:
-                                CharcterDirection.Front, start: (280, 450), end: (0,0))
-                CharacterView2(objectName: henry.name, makeDirection:
-                                CharcterDirection.Front, start: (340, 410), end: (0,0))
+                CharacterView(objectName: .Walker, makeDirection:
+                                CharcterDirection.Front, durationNumber: false, start: (50, 400), end: (0,0))
+                CharacterView(objectName: .Luna, makeDirection:
+                                CharcterDirection.Front, durationNumber: false, start: (90, 460), end: (0,0))
+                CharacterView(objectName: .Coffee, makeDirection:
+                                CharcterDirection.Front, durationNumber: false, start: (150, 490), end: (0,0))
+                CharacterView(objectName: .Muho, makeDirection:
+                                CharcterDirection.Front, durationNumber: false, start: (210, 495), end: (0,0))
+                CharacterView(objectName: .Olive, makeDirection:
+                                CharcterDirection.Front,durationNumber: false, start: (280, 450), end: (0,0))
+                CharacterView(objectName: .Henry, makeDirection:
+                                CharcterDirection.Front, durationNumber: false, start: (340, 410), end: (0,0))
             }
             
             if isBoatMove {
