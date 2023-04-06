@@ -14,16 +14,6 @@ struct SequenceOpeningView: View {
     @EnvironmentObject
     var globalStore: GlobalStore
     
-    let backgroundMusicFiles = ["BGM_Adventure_Begin", "BGM_Adventure_mystery"]
-    let soundEffectFiles = ["SFX_Opening_exp_medium6", "SFX_Opening_sounds_falling7", "SFX_Opening_sounds_powerup15", "SFX_Opening_lowhealth_alarmloop7", "SFX_Opening_sounds_powerup6", "SFX_Opening_sounds_button11", "SFX_Opening_movement_dooropen4", "Walk"] // add the names of your sound effect files here
-    let musicFileExtension = "wav" // add the extension of your music files here
-    let musicFileExtension1 = "wav"
-    //let backgroundMusicCountInterval = 1...2 // play background music when the count is within this range
-    //let soundEffectCountIntervals = [2, 4] // play sound effects when the count is equal to these values
-    
-    let volume: Float = 0.1 // adjust this value to set the volume
-    let volume1: Float = 0.3
-    
     @State private var currentCount = 0
     @State private var backgroundMusicPlayer: AVPlayer?
     @State private var soundEffectPlayer: AVPlayer?

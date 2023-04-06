@@ -33,17 +33,7 @@ struct SequenceOneView: View {
     @State private var isJolJol = false
     @State private var isJolJolMove = false
     @State private var isMuho = false
-    
-    
-    
-    let backgroundMusicFiles = ["BGM_Adventure_Rest"]
-    let soundEffectFiles = ["SFX_SeqOne_sound_neutral6", "SFX_SeqOne_lowhealth_alarmloop7", "SFX_SeqOne_sound_neutral11", "SFX_SeqOne_alarm_loop6", "SFX_SeqOne_coin_double7", "Walk"] // add the names of your sound effect files here
-    let musicFileExtension = "wav" // add the extension of your music files here
-    let musicFileExtension1 = "m4a"
-    //let soundEffectCountIntervals = [2, 4] // play sound effects when the count is equal to these values
-    
-    let volume: Float = 0.1 // adjust this value to set the volume
-    let volume1: Float = 0.3
+
     
     @State private var currentCount = 0
     @State private var backgroundMusicPlayer: AVPlayer?

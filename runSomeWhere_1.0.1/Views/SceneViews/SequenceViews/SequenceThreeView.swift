@@ -14,14 +14,7 @@ struct SequenceThreeView: View {
     @EnvironmentObject
     var globalStore: GlobalStore
     
-    let backgroundMusicFiles = ["BGM_Adventure_Explore"]
-    let soundEffectFiles = ["Walk", "SFX_SeqThree_sounds_powerup10", "SFX_SeqThree_coin_cluster3", "SFX_SeqThree_menu_select4", "SFX_SeqThree_sound_mechanicalnoise4", "SFX_SeqThree_lowhealth_alarmloop6", "SFX_SeqThree_sounds_fanfare3"] // add the names of your sound effect files here
-    let musicFileExtension = "wav" // add the extension of your music files here
-    let musicFileExtension1 = "wav"
-    
-    let volume: Float = 0.1 // adjust this value to set the volume
-    let volume1: Float = 0.3
-    
+
     @State private var currentCount = 0
     @State private var backgroundMusicPlayer: AVPlayer?
     @State private var soundEffectPlayer: AVPlayer?

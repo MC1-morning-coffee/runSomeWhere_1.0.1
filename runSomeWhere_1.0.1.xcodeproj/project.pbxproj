@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0E03D43229DE87A4004FE8F9 /* SoundModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E03D43129DE87A4004FE8F9 /* SoundModel.swift */; };
+		0E03D43529DE890D004FE8F9 /* SoundHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E03D43429DE890D004FE8F9 /* SoundHandler.swift */; };
 		A9151BE729DBC459007AF154 /* GlobalHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9151BE629DBC459007AF154 /* GlobalHandler.swift */; };
 		A9151BE929DBC4BB007AF154 /* FaceHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9151BE829DBC4BB007AF154 /* FaceHandler.swift */; };
 		A9151BEB29DBC84A007AF154 /* DetailPopupHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9151BEA29DBC84A007AF154 /* DetailPopupHandler.swift */; };
@@ -90,6 +92,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0E03D43129DE87A4004FE8F9 /* SoundModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundModel.swift; sourceTree = "<group>"; };
+		0E03D43429DE890D004FE8F9 /* SoundHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundHandler.swift; sourceTree = "<group>"; };
 		A9151BE629DBC459007AF154 /* GlobalHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalHandler.swift; sourceTree = "<group>"; };
 		A9151BE829DBC4BB007AF154 /* FaceHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FaceHandler.swift; sourceTree = "<group>"; };
 		A9151BEA29DBC84A007AF154 /* DetailPopupHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailPopupHandler.swift; sourceTree = "<group>"; };
@@ -185,6 +189,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0E03D43029DE8787004FE8F9 /* SoundModels */ = {
+			isa = PBXGroup;
+			children = (
+				0E03D43129DE87A4004FE8F9 /* SoundModel.swift */,
+			);
+			path = SoundModels;
+			sourceTree = "<group>";
+		};
+		0E03D43329DE88F0004FE8F9 /* SoundHandlers */ = {
+			isa = PBXGroup;
+			children = (
+				0E03D43429DE890D004FE8F9 /* SoundHandler.swift */,
+			);
+			path = SoundHandlers;
+			sourceTree = "<group>";
+		};
 		A9151BE429DBC423007AF154 /* GlobalHandlers */ = {
 			isa = PBXGroup;
 			children = (
@@ -288,6 +308,7 @@
 		A940C0E029DBACDD00B98857 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				0E03D43029DE8787004FE8F9 /* SoundModels */,
 				A9151BE529DBC435007AF154 /* UserModels */,
 				A940C10829DBC21800B98857 /* QuizModels */,
 				A940C10229DBBFC300B98857 /* SceneModels */,
@@ -309,6 +330,7 @@
 		A940C0E229DBACFA00B98857 /* Handlers */ = {
 			isa = PBXGroup;
 			children = (
+				0E03D43329DE88F0004FE8F9 /* SoundHandlers */,
 				A9151BE429DBC423007AF154 /* GlobalHandlers */,
 				A940C10B29DBC27E00B98857 /* QuizHandlers */,
 				A940C10529DBC14500B98857 /* SceneHandlers */,
@@ -681,6 +703,7 @@
 				A95CCC7E29DC0EFE00350C76 /* SequenceThreeChildView.swift in Sources */,
 				A9BA63F129DC68E7006FBD69 /* QuizModalView.swift in Sources */,
 				A9BA63E229DC40CC006FBD69 /* SelectCharcterView.swift in Sources */,
+				0E03D43229DE87A4004FE8F9 /* SoundModel.swift in Sources */,
 				A940C10729DBC15600B98857 /* SceneHandler.swift in Sources */,
 				A940C0F729DBB0D600B98857 /* ScriptModel.swift in Sources */,
 				A940C10429DBBFD300B98857 /* SceneModel.swift in Sources */,
@@ -699,6 +722,7 @@
 				A9BA63ED29DC6758006FBD69 /* SequenceTwoHandler.swift in Sources */,
 				A95CCC8229DC0F1500350C76 /* SequenceTwoView.swift in Sources */,
 				A940C0F429DBAFD800B98857 /* safeArea.swift in Sources */,
+				0E03D43529DE890D004FE8F9 /* SoundHandler.swift in Sources */,
 				A9BA63F429DC6928006FBD69 /* QuizModalContainerView.swift in Sources */,
 				A95CCC8529DC114900350C76 /* DetailPopupView.swift in Sources */,
 				A9B777DC29DBF45D00E284DC /* Ex+String.swift in Sources */,
