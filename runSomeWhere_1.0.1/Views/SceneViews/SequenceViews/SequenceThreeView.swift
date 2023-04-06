@@ -227,67 +227,7 @@ struct SequenceThreeView: View {
         .onReceive(globalStore.$scriptCount, perform: { currentCount in
             handleSequenceView(scriptCount: currentCount)
             
-//            switch currentCount {
-//            case 0 :
-//                let musicFileName = backgroundMusicFiles[0] // count starts at 1, but array index starts at 0
-//                let musicFileUrl = Bundle.main.url(forResource: musicFileName, withExtension: musicFileExtension)!
-//                backgroundMusicPlayer = AVPlayer(url: musicFileUrl)
-//                backgroundMusicPlayer?.volume = volume
-//                backgroundMusicPlayer?.play()
-//                
-//                let effectFileName = soundEffectFiles[0] // count starts at 1, but array index starts at 0
-//                let effectFileUrl = Bundle.main.url(forResource: effectFileName, withExtension: musicFileExtension1)!
-//                soundEffectPlayer = AVPlayer(url: effectFileUrl)
-//                soundEffectPlayer?.volume = volume1
-//                soundEffectPlayer?.play()
-//
-//            case 4 :
-//                //backgroundMusicPlayer?.pause()
-//                
-//                let effectFileName = soundEffectFiles[1] // count starts at 1, but array index starts at 0
-//                let effectFileUrl = Bundle.main.url(forResource: effectFileName, withExtension: musicFileExtension1)!
-//                soundEffectPlayer = AVPlayer(url: effectFileUrl)
-//                soundEffectPlayer?.volume = volume1
-//                soundEffectPlayer?.play()
-//            case 5 :
-//                let effectFileName = soundEffectFiles[2] // count starts at 1, but array index starts at 0
-//                let effectFileUrl = Bundle.main.url(forResource: effectFileName, withExtension: musicFileExtension1)!
-//                soundEffectPlayer = AVPlayer(url: effectFileUrl)
-//                soundEffectPlayer?.volume = volume1
-//                soundEffectPlayer?.play()
-//            case 7 :
-//                let effectFileName = soundEffectFiles[3] // count starts at 1, but array index starts at 0
-//                let effectFileUrl = Bundle.main.url(forResource: effectFileName, withExtension: musicFileExtension1)!
-//                soundEffectPlayer = AVPlayer(url: effectFileUrl)
-//                soundEffectPlayer?.volume = volume1
-//                soundEffectPlayer?.play()
-//            case 12 :
-//                let effectFileName = soundEffectFiles[4] // count starts at 1, but array index starts at 0
-//                let effectFileUrl = Bundle.main.url(forResource: effectFileName, withExtension: musicFileExtension1)!
-//                soundEffectPlayer = AVPlayer(url: effectFileUrl)
-//                soundEffectPlayer?.volume = volume1
-//                soundEffectPlayer?.play()
-//            case 21 :
-//                let effectFileName = soundEffectFiles[0] // count starts at 1, but array index starts at 0
-//                let effectFileUrl = Bundle.main.url(forResource: effectFileName, withExtension: musicFileExtension1)!
-//                soundEffectPlayer = AVPlayer(url: effectFileUrl)
-//                soundEffectPlayer?.volume = volume1
-//                soundEffectPlayer?.play()
-//            case 22 :
-//                let effectFileName = soundEffectFiles[5] // count starts at 1, but array index starts at 0
-//                let effectFileUrl = Bundle.main.url(forResource: effectFileName, withExtension: musicFileExtension1)!
-//                soundEffectPlayer = AVPlayer(url: effectFileUrl)
-//                soundEffectPlayer?.volume = volume1
-//                soundEffectPlayer?.play()
-//            case 24 :
-//                let effectFileName = soundEffectFiles[6] // count starts at 1, but array index starts at 0
-//                let effectFileUrl = Bundle.main.url(forResource: effectFileName, withExtension: musicFileExtension1)!
-//                soundEffectPlayer = AVPlayer(url: effectFileUrl)
-//                soundEffectPlayer?.volume = volume1
-//                soundEffectPlayer?.play()
-//                
-//            default:
-//                break
+
 //            }
         })
     }
