@@ -20,15 +20,15 @@ struct CharacterView: View {
     
     
     // name, direction -> imageName으로 변환
-    func updateImage(name: Player, direction: CharcterDirection) -> String {
-        return "\(name)_\(direction)"
-        }
+    func updateImage(name: Player, direction: CharcterDirection) {
+        imageName = String("\(name)_\(direction)")
+    }
     
     
     var body: some View {
         
         VStack {
-            Image(updateImage(name: objectName, direction: makeDirection))
+            Image(imageName)
                 .position(x: CGFloat(start.0), y: CGFloat(start.1))
                 .edgesIgnoringSafeArea(.all)
                 .offset(x:  (imageOffset ? CGFloat(end.0) : 0), y: imageOffset ? CGFloat(end.1) : 0)
@@ -41,10 +41,10 @@ struct CharacterView: View {
                         setTimeIntervalClosure(Count: 0) {
                             if imageNumber {
                                 imageNumber.toggle()
-                                imageName = updateImage(name: objectName, direction: CharcterDirection.Back_2)
+                                updateImage(name: objectName, direction: CharcterDirection.Back_2)
                             } else {
                                 imageNumber.toggle()
-                                imageName = updateImage(name: objectName, direction: CharcterDirection.Back_1)
+                                updateImage(name: objectName, direction: CharcterDirection.Back_1)
                             }
                         }
                     }
@@ -54,15 +54,15 @@ struct CharacterView: View {
                         setTimeIntervalClosure(Count: 0) {
                             if imageNumber{
                                 imageNumber.toggle()
-                                imageName = updateImage(name: objectName, direction: CharcterDirection.Side_2)
+                                updateImage(name: objectName, direction: CharcterDirection.Side_2)
                             } else {
                                 imageNumber.toggle()
-                                imageName = updateImage(name: objectName, direction: CharcterDirection.Side_1)
+                                updateImage(name: objectName, direction: CharcterDirection.Side_1)
                             }
                         }
                     }
                     else { // 뚜벅 X
-                        imageName = updateImage(name: objectName, direction: makeDirection)
+                        updateImage(name: objectName, direction: makeDirection)
                     }
                 }
         }
@@ -74,3 +74,4 @@ struct CharacterView_Previews: PreviewProvider {
         CharacterView(objectName: .Coffee, makeDirection: .Back_1, durationNumber: false, start: (0, 0), end: (195, 422))
     }
 }
+

@@ -58,11 +58,6 @@ struct User {
 }
 
 
-
-// 모든 user에 대한 정보
-//var henry = User(id: 1, name: "Henry_", direction: CharcterDirection.Front, isShown: false, coord: (100.0, 100.0))
-//var olive = User(id: 2, name: "Olive_", direction: CharcterDirection.Front, isShown: false, coord: (100.0, 100.0))
-//var luna = User(id: 3, name: "Luna_", direction: CharcterDirection.Back_1, isShown: true, coord: (100.0, 100.0))
-//var muho = User(id: 4, name: "Muho_", direction: CharcterDirection.Front, isShown: false, coord: (100.0, 100.0))
-//var coffee = User(id: 5, name: "Coffee_", direction: CharcterDirection.Front, isShown: false, coord: (100.0, 100.0))
-//var walker = User(id: 6, name: "Walker_", direction: CharcterDirection.Front, isShown: false, coord: (100.0, 100.0))
+//@State var users: [User] = [
+//    User(id: 1, name: "Henry", direction: .Left, start: (), end: <#T##(Float, Float)#>)
+//]

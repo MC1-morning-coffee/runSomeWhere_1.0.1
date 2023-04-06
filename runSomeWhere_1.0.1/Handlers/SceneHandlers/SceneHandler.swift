@@ -8,6 +8,9 @@
 import Foundation
 
 class SceneStore: ObservableObject {
+    
+    
+    
     /**
     `globalStore.scriptCount`가 변할 때마다 발생하는 이벤트를 처리하기 위한 함수
      */
