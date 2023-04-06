@@ -69,7 +69,9 @@ struct ScriptBoxView: View {
             scriptStore.updateCurrentScript(globalStore: globalStore, scriptStore: scriptStore, sceneStore: sceneStore, faceStore: faceStore, quizStore: quizStore, detailPopupStore: detailPopupStore)
         }
         .onReceive(globalStore.$scriptCount, perform: { currentCount in
-            scriptStore.updateScriptText(currentCount: currentCount)
+            if currentCount != -1 {
+                scriptStore.updateScriptText(currentCount: currentCount, faceStore: faceStore)
+            }
         })
     }
 }

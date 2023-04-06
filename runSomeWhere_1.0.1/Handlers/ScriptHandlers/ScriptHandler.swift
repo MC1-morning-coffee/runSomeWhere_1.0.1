@@ -75,11 +75,17 @@ extension ScriptStore {
                 self.tmpText.append(self.value[position])
                 self.typeWriter(at: position + 1)
             }
+            
+            if "\(tmpText)\(value[position])" == value {
+                turnOnIsTapAble()
+            }
         }
     }
     
-    func updateScriptText(currentCount: Int) {
+    func updateScriptText(currentCount: Int, faceStore: FaceStore) {
+        turnOffIsTapAble()
         value = currentScripts[currentCount].1
+        faceStore.currentFaces = currentScripts[currentCount].0
         typeWriter()
     }
 }
@@ -105,6 +111,7 @@ extension ScriptStore {
             globalStore.resetScriptCount()
         }else{
             globalStore.addScriptCount()
+            
         }
         sceneStore.handleSequenceEvent(globalStore: globalStore, scriptStore: scriptStore, sceneStore: sceneStore, faceStore: faceStore, quizStore: quizStore, detailPopupStore: detailPopupStore)
     }

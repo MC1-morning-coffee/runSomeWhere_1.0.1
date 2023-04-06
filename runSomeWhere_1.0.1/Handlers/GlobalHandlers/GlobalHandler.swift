@@ -9,7 +9,7 @@ import Foundation
 
 class GlobalStore: ObservableObject {
     @Published
-    var scriptCount = 0
+    var scriptCount = -1
     
     @Published
     var currentSequence: Sequence = .opeaning
@@ -86,5 +86,6 @@ extension GlobalStore {
 extension GlobalStore {
     func turnOffIsMovieStart() {
         isMovieStart = false
+        scriptCount = 0
     }
 }

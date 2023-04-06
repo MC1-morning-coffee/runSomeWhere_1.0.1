@@ -23,7 +23,6 @@ class FaceStore: ObservableObject {
      */
     @Published
     var rightFaceViewPositionX = 0.0
-    
     /**
      leftFaceView의 애니메이션 효과를 위한 값
      */
