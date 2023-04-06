@@ -10,11 +10,11 @@ import SwiftUI
 struct ButtonSelectCharcterView: View {
     
     @State
-    var charcter: Player = .coffee
+    var charcter: Player = .Coffee
     var index: Int
     var completion: () -> Void = {print("Hello")}
     
-    init(charcter: Player = .coffee, index: Int, completion: @escaping ()->Void) {
+    init(charcter: Player = .Coffee, index: Int, completion: @escaping ()->Void) {
         self.charcter = charcter
         self.completion = completion
         self.index = index

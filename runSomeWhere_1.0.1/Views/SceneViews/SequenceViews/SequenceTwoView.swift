@@ -94,8 +94,8 @@ struct SequenceTwoView: View {
     var body: some View {
         ZStack {
             if isCharacterMove {
-                CharacterView(objectName: "BigMuho_", makeDirection: CharcterDirection.Back_1, start: (170, 522), end: (0, 0))
-                CharacterView(objectName: "BigCoffee_", makeDirection: CharcterDirection.Back_1, start: (220, 522), end: (0, 0))
+                CharacterView(objectName: .BigMuho, makeDirection: CharcterDirection.Back_1, durationNumber: true, start: (170, 522), end: (0, 0))
+                CharacterView(objectName: .BigCoffee, makeDirection: CharcterDirection.Back_1, durationNumber: true, start: (220, 522), end: (0, 0))
             }
             if isWrongAutoDoorComing{
                         Image("Object_Door_Closed")

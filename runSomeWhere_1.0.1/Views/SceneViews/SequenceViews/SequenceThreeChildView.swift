@@ -45,12 +45,12 @@ struct SequenceThreeChildView: View {
 
     var body: some View {
         if isPeopleMoving1 {
-            CharacterView(objectName: walker.name, makeDirection: CharcterDirection.Back_1, start: (50, 660), end: (0, -310))
-            CharacterView(objectName: luna.name, makeDirection: CharcterDirection.Back_1, start: (90, 660), end: (0, -250))
-            CharacterView(objectName: coffee.name, makeDirection: CharcterDirection.Back_1, start: (150, 660), end: (0, -220))
-            CharacterView(objectName: muho.name, makeDirection: CharcterDirection.Back_1, start: (210, 660), end: (0, -215))
-            CharacterView(objectName: olive.name, makeDirection: CharcterDirection.Back_1, start: (280, 660), end: (0, -260))
-            CharacterView(objectName: henry.name, makeDirection: CharcterDirection.Back_1, start: (340, 660), end: (0, -300))
+            CharacterView(objectName: .Walker, makeDirection: CharcterDirection.Back_1, durationNumber: true, start: (50, 660), end: (0, -310))
+            CharacterView(objectName: .Luna, makeDirection: CharcterDirection.Back_1, durationNumber: true, start: (90, 660), end: (0, -250))
+            CharacterView(objectName: .Coffee, makeDirection: CharcterDirection.Back_1, durationNumber: true, start: (150, 660), end: (0, -220))
+            CharacterView(objectName: .Muho, makeDirection: CharcterDirection.Back_1, durationNumber: true, start: (210, 660), end: (0, -215))
+            CharacterView(objectName: .Olive, makeDirection: CharcterDirection.Back_1, durationNumber: true, start: (280, 660), end: (0, -260))
+            CharacterView(objectName: .Henry, makeDirection: CharcterDirection.Back_1, durationNumber: true, start: (340, 660), end: (0, -300))
         }
         
         if isDrawingActive {
@@ -101,12 +101,12 @@ struct SequenceThreeChildView: View {
         }
         
         if isPeopleMoving2 {
-            CharacterView2(objectName: walker.name, makeDirection: CharcterDirection.Back_1, start: (50, 350), end: (100, -30))
-            CharacterView2(objectName: luna.name, makeDirection: CharcterDirection.Back_1, start: (90, 410), end: (70, -80))
-            CharacterView2(objectName: coffee.name, makeDirection: CharcterDirection.Back_1, start: (150, 440), end: (30, -100))
-            CharacterView2(objectName: muho.name, makeDirection: CharcterDirection.Back_1, start: (210, 445), end: (-20, -115))
-            CharacterView2(objectName: olive.name, makeDirection: CharcterDirection.Back_1, start: (280, 400), end: (-70, -60))
-            CharacterView2(objectName: henry.name, makeDirection: CharcterDirection.Back_1, start: (340, 360), end: (-110, -10))
+            CharacterView(objectName: .Walker, makeDirection: CharcterDirection.Back_1, durationNumber: false, start: (50, 350), end: (100, -30))
+            CharacterView(objectName: .Luna, makeDirection: CharcterDirection.Back_1, durationNumber: false, start: (90, 410), end: (70, -80))
+            CharacterView(objectName: .Coffee, makeDirection: CharcterDirection.Back_1, durationNumber: false, start: (150, 440), end: (30, -100))
+            CharacterView(objectName: .Muho, makeDirection: CharcterDirection.Back_1, durationNumber: false, start: (210, 445), end: (-20, -115))
+            CharacterView(objectName: .Olive, makeDirection: CharcterDirection.Back_1, durationNumber: false, start: (280, 400), end: (-70, -60))
+            CharacterView(objectName: .Henry, makeDirection: CharcterDirection.Back_1, durationNumber: false, start: (340, 360), end: (-110, -10))
         }
         
         if isPeopleOnBoat {

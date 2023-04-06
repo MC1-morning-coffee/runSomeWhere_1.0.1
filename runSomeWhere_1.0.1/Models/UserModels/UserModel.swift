@@ -9,12 +9,14 @@ import Foundation
 import SwiftUI
 
 enum Player {
-    case coffee
-    case walker
-    case luna
-    case henry
-    case muho
-    case olive
+    case Coffee
+    case Walker
+    case Luna
+    case Henry
+    case Muho
+    case Olive
+    case BigCoffee
+    case BigMuho
 }
 
 extension Player {
@@ -25,18 +27,22 @@ extension Player {
     
     var keyColor: String {
         switch self {
-        case .coffee:
+        case .Coffee:
             return "빨강"
-        case .walker:
+        case .Walker:
             return "초록"
-        case .luna:
+        case .Luna:
             return "노랑"
-        case .henry:
+        case .Henry:
             return "파랑"
-        case .muho:
+        case .Muho:
             return "주황"
-        case .olive:
+        case .Olive:
             return "보라"
+        case .BigCoffee:
+            return "빨강"
+        case .BigMuho:
+            return "주황"
         }
     }
 }
@@ -45,16 +51,13 @@ extension Player {
 // User 각각 object들에 대한 정보를 저장하는 structure
 struct User {
     var id: Int // 유저의 고유한 아이디
-    var name: String
+    var name: Player
     var direction: CharcterDirection
-    var isShown: Bool // true일때만 화면 상에 보여줌
-    var coord: (Float, Float) // 오브젝트들의 위치
+    var start: (Float, Float)
+    var end: (Float, Float)
 }
 
-// 모든 user에 대한 정보
-var henry = User(id: 1, name: "Henry_", direction: CharcterDirection.Front, isShown: false, coord: (100.0, 100.0))
-var olive = User(id: 2, name: "Olive_", direction: CharcterDirection.Front, isShown: false, coord: (100.0, 100.0))
-var luna = User(id: 3, name: "Luna_", direction: CharcterDirection.Back_1, isShown: true, coord: (100.0, 100.0))
-var muho = User(id: 4, name: "Muho_", direction: CharcterDirection.Front, isShown: false, coord: (100.0, 100.0))
-var coffee = User(id: 5, name: "Coffee_", direction: CharcterDirection.Front, isShown: false, coord: (100.0, 100.0))
-var walker = User(id: 6, name: "Walker_", direction: CharcterDirection.Front, isShown: false, coord: (100.0, 100.0))
+
+//@State var users: [User] = [
+//    User(id: 1, name: "Henry", direction: .Left, start: (), end: <#T##(Float, Float)#>)
+//]
