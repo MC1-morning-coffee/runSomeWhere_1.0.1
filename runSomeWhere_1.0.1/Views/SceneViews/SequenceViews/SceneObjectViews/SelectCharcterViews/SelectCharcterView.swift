@@ -29,7 +29,7 @@ struct SelectCharcterView: View {
     var sceneStore: SceneStore
         
     private let SCRIPT_BOX_VIEW_BACKGROUND_IMAGE = "Background_Text"
-    private let charcters: [Charcter] = [.walker, .coffee, .luna, .olive, .muho, .henry]
+    private let players: [Player] = [.walker, .coffee, .luna, .olive, .muho, .henry]
     
     private func handleSelectAnswer() {
         sceneStore.handleSequenceSelectCharcter(globalStore: globalStore, scriptStore: scriptStore, detailPopupStore: detailPopupStore)
@@ -45,7 +45,7 @@ struct SelectCharcterView: View {
                     .zIndex(-1)
                     .offset(y: offset)
                 LazyVGrid(columns: gridColumns) {
-                    ForEach(Array(charcters.enumerated()), id: \.offset){ index, _charcters in
+                    ForEach(Array(players.enumerated()), id: \.offset){ index, _charcters in
                         ButtonSelectCharcterView(charcter: _charcters, index: index) {
                             if _charcters == .coffee {
                                 handleSelectAnswer()

@@ -253,8 +253,11 @@ struct SceneBackgroundView: View {
                 bgOffsetY = bgOffsetY + currentCount * 2
             }
             
-            if currentCount > 40 {
-                globalStore.addScriptCount()
+            if scriptStore.value == scriptStore.tmpText{
+                if currentCount > 40 {
+                    globalStore.addScriptCount()
+                }
+                
             }
         })
     }
