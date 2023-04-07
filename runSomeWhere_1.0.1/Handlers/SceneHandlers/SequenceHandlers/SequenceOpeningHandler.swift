@@ -51,22 +51,22 @@ class SequenceOpeningStore: ObservableObject {
     
     @Published
     var staticPlayers = [
-        PlayerInfo(user: .walker, start: (80.0, 550.0), end: (0.0, 0.0)),
-        PlayerInfo(user: .luna, start: (124.0, 560.0), end: (0.0, 0.0)),
-        PlayerInfo(user: .muho, start: (168.0, 540.0), end: (0.0, 0.0)),
-        PlayerInfo(user: .coffee, start: (220.0, 560.0), end: (0.0, 0.0)),
-        PlayerInfo(user: .olive, start: (266.0, 570.0), end: (0.0, 0.0)),
-        PlayerInfo(user: .henry, start: (310.0, 540.0), end: (0.0, 0.0)),
+        PlayerInfo(user: .Walker, start: (80.0, 550.0), end: (0.0, 0.0)),
+        PlayerInfo(user: .Luna, start: (124.0, 560.0), end: (0.0, 0.0)),
+        PlayerInfo(user: .Muho, start: (168.0, 540.0), end: (0.0, 0.0)),
+        PlayerInfo(user: .Coffee, start: (220.0, 560.0), end: (0.0, 0.0)),
+        PlayerInfo(user: .Olive, start: (266.0, 570.0), end: (0.0, 0.0)),
+        PlayerInfo(user: .Henry, start: (310.0, 540.0), end: (0.0, 0.0)),
     ]
     
     @Published
     var dynamicPlayers = [
-        PlayerInfo(user: .walker, start: (80.0, 550.0), end: (-20.0, -420.0)),
-        PlayerInfo(user: .luna, start: (124.0, 560.0), end: (-10.0, -400.0)),
-        PlayerInfo(user: .muho, start: (168.0, 540.0), end: (0.0, -370.0)),
-        PlayerInfo(user: .coffee, start: (220.0, 560.0), end: (0.0, -410.0)),
-        PlayerInfo(user: .olive, start: (266.0, 570.0), end: (20.0, -400.0)),
-        PlayerInfo(user: .henry, start: (310.0, 540.0), end: (40.0, -370.0)),
+        PlayerInfo(user: .Walker, start: (80.0, 550.0), end: (-20.0, -420.0)),
+        PlayerInfo(user: .Luna, start: (124.0, 560.0), end: (-10.0, -400.0)),
+        PlayerInfo(user: .Muho, start: (168.0, 540.0), end: (0.0, -370.0)),
+        PlayerInfo(user: .Coffee, start: (220.0, 560.0), end: (0.0, -410.0)),
+        PlayerInfo(user: .Olive, start: (266.0, 570.0), end: (20.0, -400.0)),
+        PlayerInfo(user: .Henry, start: (310.0, 540.0), end: (40.0, -370.0)),
     ]
     
     func handleSequenceInteraction(scriptCount: Int) {
@@ -78,7 +78,7 @@ class SequenceOpeningStore: ObservableObject {
                 self.isStaticPlayersActive = true
             }
         case 11:
-            setTimeoutClosure(timeCount: 250) {
+            setTimeoutClosure(timeCount: 200) {
                 self.isStaticPlayersActive = false
             }
             self.isDynamicPlayersActive = true
