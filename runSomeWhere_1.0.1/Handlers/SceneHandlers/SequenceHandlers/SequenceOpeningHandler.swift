@@ -43,9 +43,31 @@ class SequenceOpeningStore: ObservableObject {
     var isBackgroundBlackActive = true
     
     @Published
-    var isCharcterMove: Bool? = nil
+    var isStaticPlayersActive = false
+    
+    @Published
+    var isDynamicPlayersActive = false
     
     
+    @Published
+    var staticPlayers = [
+        PlayerInfo(user: .walker, start: (80.0, 550.0), end: (0.0, 0.0)),
+        PlayerInfo(user: .luna, start: (124.0, 560.0), end: (0.0, 0.0)),
+        PlayerInfo(user: .muho, start: (168.0, 540.0), end: (0.0, 0.0)),
+        PlayerInfo(user: .coffee, start: (220.0, 560.0), end: (0.0, 0.0)),
+        PlayerInfo(user: .olive, start: (266.0, 570.0), end: (0.0, 0.0)),
+        PlayerInfo(user: .henry, start: (310.0, 540.0), end: (0.0, 0.0)),
+    ]
+    
+    @Published
+    var dynamicPlayers = [
+        PlayerInfo(user: .walker, start: (80.0, 550.0), end: (-20.0, -420.0)),
+        PlayerInfo(user: .luna, start: (124.0, 560.0), end: (-10.0, -400.0)),
+        PlayerInfo(user: .muho, start: (168.0, 540.0), end: (0.0, -370.0)),
+        PlayerInfo(user: .coffee, start: (220.0, 560.0), end: (0.0, -410.0)),
+        PlayerInfo(user: .olive, start: (266.0, 570.0), end: (20.0, -400.0)),
+        PlayerInfo(user: .henry, start: (310.0, 540.0), end: (40.0, -370.0)),
+    ]
     
     func handleSequenceInteraction(scriptCount: Int) {
         switch scriptCount {
@@ -53,12 +75,15 @@ class SequenceOpeningStore: ObservableObject {
         case 3:
             setTimeoutClosure(timeCount: 1500) {
                 self.isBackgroundBlackActive = false
-                self.isCharcterMove = false
+                self.isStaticPlayersActive = true
             }
         case 11:
-            self.isCharcterMove = true
+            setTimeoutClosure(timeCount: 250) {
+                self.isStaticPlayersActive = false
+            }
+            self.isDynamicPlayersActive = true
         case 12:
-            self.isCharcterMove = nil
+            self.isDynamicPlayersActive = false
         default:
             print("scriptCount: ", scriptCount)
             

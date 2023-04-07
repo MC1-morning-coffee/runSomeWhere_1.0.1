@@ -8,7 +8,7 @@
 import Foundation
 import SwiftUI
 
-enum Player {
+enum Player: String {
     case coffee
     case walker
     case luna
@@ -18,11 +18,6 @@ enum Player {
 }
 
 extension Player {
-    
-    func getImageSrc(){
-        
-    }
-    
     var keyColor: String {
         switch self {
         case .coffee:
@@ -41,7 +36,6 @@ extension Player {
     }
 }
 
-
 // User 각각 object들에 대한 정보를 저장하는 structure
 struct User {
     var id: Int // 유저의 고유한 아이디
@@ -58,3 +52,10 @@ var luna = User(id: 3, name: "Luna_", direction: CharcterDirection.Back_1, isSho
 var muho = User(id: 4, name: "Muho_", direction: CharcterDirection.Front, isShown: false, coord: (100.0, 100.0))
 var coffee = User(id: 5, name: "Coffee_", direction: CharcterDirection.Front, isShown: false, coord: (100.0, 100.0))
 var walker = User(id: 6, name: "Walker_", direction: CharcterDirection.Front, isShown: false, coord: (100.0, 100.0))
+
+struct PlayerInfo {
+    let id = UUID()
+    let user: Player
+    let start: (Float, Float)
+    let end: (Float, Float)
+}
