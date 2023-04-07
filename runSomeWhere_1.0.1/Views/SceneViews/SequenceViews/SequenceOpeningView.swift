@@ -16,19 +16,31 @@ struct SequenceOpeningView: View {
     
     @StateObject
     var sequenceOpeningStore = SequenceOpeningStore()
-
+        
+    typealias PlayerInfo = (Player, (Float, Float), (Float, Float))
+        
+    var staticCharcters: [PlayerInfo] = [
+        (.Walker, (80.0, 550.0), (0.0, 0.0)),
+        (.Luna, (80.0, 550.0), (0.0, 0.0)),
+        (.Muho, (80.0, 550.0), (0.0, 0.0)),
+        (.Coffee, (80.0, 550.0), (0.0, 0.0)),
+        (.Olive, (80.0, 550.0), (0.0, 0.0)),
+        (.Henry, (80.0, 550.0), (0.0, 0.0))
+    ]
+    
+    var dynamicCharcters: [PlayerInfo] = [
+    ]
+    
     var body: some View {
         ZStack(alignment: .topLeading){
             if sequenceOpeningStore.isStaticPlayersActive {
                 ZStack{
-                    ForEach(sequenceOpeningStore.staticPlayers, id: \.id) { playerInfo in
-                        CharacterView(
-                            objectName: "\(playerInfo.user.rawValue.capitalized)_",
-                            makeDirection: .Back_2,
-                            start: playerInfo.start,
-                            end: playerInfo.end)
-
-                    }
+                    CharacterView(objectName: .Walker, makeDirection: .Back_2, durationNumber: true,  start: (80.0, 550.0), end: (0.0, 0.0))
+                    CharacterView(objectName: .Luna, makeDirection: CharcterDirection.Back_2, durationNumber: true, start: (124.0, 560.0), end: (0.0, 0.0))
+                    CharacterView(objectName: .Muho, makeDirection: CharcterDirection.Back_2, durationNumber: true, start: (168.0, 540.0), end: (0.0, 0.0))
+                    CharacterView(objectName: .Coffee, makeDirection: CharcterDirection.Back_2, durationNumber: true, start: (222.0, 560.0), end: (0.0, 0.0))
+                    CharacterView(objectName: .Olive, makeDirection: CharcterDirection.Back_2, durationNumber: true, start: (266.0, 570.0), end: (0.0, 0.0))
+                    CharacterView(objectName: .Henry, makeDirection: CharcterDirection.Back_2, durationNumber: true, start: (310.0, 540.0), end: (0.0, 0.0))
                 }
                 if sequenceOpeningStore.isBackgroundBlackActive {
                     Image("Background_Black")
@@ -37,14 +49,12 @@ struct SequenceOpeningView: View {
             }
             if sequenceOpeningStore.isDynamicPlayersActive {
                 ZStack{
-                    ForEach(sequenceOpeningStore.dynamicPlayers, id: \.id) { playerInfo in
-                        CharacterView(
-                            objectName: "\(playerInfo.user.rawValue.capitalized)_",
-                            makeDirection: .Back_1,
-                            start: playerInfo.start,
-                            end: playerInfo.end)
-
-                    }
+                    CharacterView(objectName: .Walker, makeDirection: CharcterDirection.Back_1, durationNumber: true, start: (80.0, 550.0), end: (-20.0, -420.0))
+                    CharacterView(objectName: .Luna, makeDirection: CharcterDirection.Back_1, durationNumber: true, start: (124.0, 560.0), end: (-10.0, -400.0))
+                    CharacterView(objectName: .Muho, makeDirection: CharcterDirection.Back_1, durationNumber: true, start: (168.0, 540.0), end: (0.0, -370.0))
+                    CharacterView(objectName: .Coffee, makeDirection: CharcterDirection.Back_1, durationNumber: true, start: (222.0, 560.0), end: (0.0, -410.0))
+                    CharacterView(objectName: .Olive, makeDirection: CharcterDirection.Back_1, durationNumber: true, start: (266.0, 570.0), end: (20.0, -400.0))
+                    CharacterView(objectName: .Henry, makeDirection: CharcterDirection.Back_1, durationNumber: true, start: (310.0, 540.0), end: (40.0, -370.0))
                 }
             }
         }

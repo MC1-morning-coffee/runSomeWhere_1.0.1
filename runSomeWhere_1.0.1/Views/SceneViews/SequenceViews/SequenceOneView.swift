@@ -92,7 +92,7 @@ struct SequenceOneView: View {
     var body: some View {
         ZStack(alignment: .topLeading){
             if isCharacterMove {
-                CharacterView(objectName: "BigCoffee_", makeDirection: .Back_1, start: (195, 540), end: (0, 0))
+                CharacterView(objectName: .BigCoffee, makeDirection: .Back_1, durationNumber: true, start: (195, 540), end: (0, 0))
             }
             
             if isJolJol {
@@ -102,7 +102,7 @@ struct SequenceOneView: View {
                 JolJolView(start: (195, 150), end: (0, -150), imageOffset: true)
             }
             if isMuho {
-                CharacterView(objectName: "BigMuho_", makeDirection: .Side_1, start: (0, 440), end: (100, 0))
+                CharacterView(objectName: .BigMuho, makeDirection: .Side_1, durationNumber: true, start: (0, 440), end: (100, 0))
             }
             
         }

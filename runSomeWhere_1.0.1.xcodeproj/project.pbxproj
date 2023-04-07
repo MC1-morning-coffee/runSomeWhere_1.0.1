@@ -44,7 +44,6 @@
 		A95CCC8829DC122300350C76 /* AutoDoorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A95CCC8729DC122300350C76 /* AutoDoorView.swift */; };
 		A95CCC8A29DC123900350C76 /* CharacterJumpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A95CCC8929DC123900350C76 /* CharacterJumpView.swift */; };
 		A95CCC8C29DC125400350C76 /* CharacterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A95CCC8B29DC125400350C76 /* CharacterView.swift */; };
-		A95CCC8E29DC12A100350C76 /* CharacterView2.swift in Sources */ = {isa = PBXBuildFile; fileRef = A95CCC8D29DC12A100350C76 /* CharacterView2.swift */; };
 		A95CCC9029DC12D400350C76 /* JolJolView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A95CCC8F29DC12D400350C76 /* JolJolView.swift */; };
 		A95CCC9229DC12FF00350C76 /* ShipPeopleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A95CCC9129DC12FF00350C76 /* ShipPeopleView.swift */; };
 		A95CCC9429DC131600350C76 /* ShipView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A95CCC9329DC131600350C76 /* ShipView.swift */; };
@@ -131,7 +130,6 @@
 		A95CCC8729DC122300350C76 /* AutoDoorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutoDoorView.swift; sourceTree = "<group>"; };
 		A95CCC8929DC123900350C76 /* CharacterJumpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterJumpView.swift; sourceTree = "<group>"; };
 		A95CCC8B29DC125400350C76 /* CharacterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterView.swift; sourceTree = "<group>"; };
-		A95CCC8D29DC12A100350C76 /* CharacterView2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterView2.swift; sourceTree = "<group>"; };
 		A95CCC8F29DC12D400350C76 /* JolJolView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JolJolView.swift; sourceTree = "<group>"; };
 		A95CCC9129DC12FF00350C76 /* ShipPeopleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShipPeopleView.swift; sourceTree = "<group>"; };
 		A95CCC9329DC131600350C76 /* ShipView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShipView.swift; sourceTree = "<group>"; };
@@ -450,7 +448,6 @@
 				A95CCC8729DC122300350C76 /* AutoDoorView.swift */,
 				A95CCC8929DC123900350C76 /* CharacterJumpView.swift */,
 				A95CCC8B29DC125400350C76 /* CharacterView.swift */,
-				A95CCC8D29DC12A100350C76 /* CharacterView2.swift */,
 				A95CCC8F29DC12D400350C76 /* JolJolView.swift */,
 				A95CCC9129DC12FF00350C76 /* ShipPeopleView.swift */,
 				A95CCC9329DC131600350C76 /* ShipView.swift */,
@@ -669,7 +666,6 @@
 				A95CCC9629DC133400350C76 /* WindReverseView.swift in Sources */,
 				A940C0EC29DBAF0500B98857 /* CustomFont.swift in Sources */,
 				A9BA63FC29DC6C8D006FBD69 /* AnswerView.swift in Sources */,
-				A95CCC8E29DC12A100350C76 /* CharacterView2.swift in Sources */,
 				A95CCC8C29DC125400350C76 /* CharacterView.swift in Sources */,
 				A940C10129DBB9E300B98857 /* ScriptHandler.swift in Sources */,
 				A95CCC8829DC122300350C76 /* AutoDoorView.swift in Sources */,
