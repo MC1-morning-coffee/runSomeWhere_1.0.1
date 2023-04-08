@@ -38,4 +38,12 @@ extension SceneStore {
 
 class SequenceOneStore: ObservableObject {
     
+    
+    func handleSequenceInteraction(scriptCount: Int) {
+        switch scriptCount {
+            
+        default:
+            print("scriptCount: ", scriptCount)
+        }
+    }
 }

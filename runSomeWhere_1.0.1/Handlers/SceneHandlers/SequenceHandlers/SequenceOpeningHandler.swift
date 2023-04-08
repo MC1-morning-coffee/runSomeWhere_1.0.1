@@ -22,7 +22,7 @@ extension SceneStore {
                 globalStore.turnOnIsSelectCharcterViewActive()
             // case 10: 사용자가 버튼 클릭으로 상태 변경
         default:
-            print("openingEvent is Ready")
+            print("no event")
         }
     }
     
