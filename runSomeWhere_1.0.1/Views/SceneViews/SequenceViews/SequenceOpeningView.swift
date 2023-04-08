@@ -30,7 +30,6 @@ struct SequenceOpeningView: View {
                             durationNumber: false,
                             start: playerInfo.start,
                             end: playerInfo.end)
-                        
                     }
                     if sequenceOpeningStore.isBackgroundBlackActive {
                         Image("Background_Black")

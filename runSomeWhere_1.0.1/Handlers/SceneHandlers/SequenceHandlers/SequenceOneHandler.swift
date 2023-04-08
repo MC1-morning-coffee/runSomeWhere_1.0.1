@@ -14,14 +14,28 @@ extension SceneStore {
         switch scriptCount {
             case 2:
                 faceStore.turnOffIsFaceViewActive()
+                detailPopupStore.turnOnIsPopupActive()
+                detailPopupStore.updateCurrentDetailImage(detailImage: .Water)
             case 3:
                 faceStore.turnOnIsFaceViewActive()
+            /**
+             쫄쫄이가 문제를 낸다
+             */
             case 5:
+                detailPopupStore.turnOffIsPopupActive()
                 faceStore.turnOffIsFaceViewActive()
+                globalStore.turnOnIsQuizSequence()
+            /**
+             쫄쫄이가 사라진다.
+             */
             case 6:
                 faceStore.turnOnIsFaceViewActive()
         default:
             print("no event")
         }
     }
+}
+
+class SequenceOneStore: ObservableObject {
+    
 }
