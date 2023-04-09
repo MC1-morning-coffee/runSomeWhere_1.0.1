@@ -27,7 +27,12 @@ import Combine
  */
 
 struct SequenceOneView: View {
-    @EnvironmentObject var globalStore: GlobalStore
+    @EnvironmentObject
+    var globalStore: GlobalStore
+    
+    @StateObject
+    var sequenceOneStore = SequenceOneStore()
+    
     @State private var isCharacterMove = true
     @State private var isJolJol = false
     @State private var isJolJolMove = false
@@ -75,23 +80,23 @@ struct SequenceOneView: View {
     
     var body: some View {
         ZStack(alignment: .topLeading){
-            if isCharacterMove {
+            if sequenceOneStore.isPlayerMove {
                 CharacterView(objectName: .BigCoffee, makeDirection: .Back_1, durationNumber: true, start: (195, 540), end: (0, 0))
             }
             
-            if isJolJol {
+            if sequenceOneStore.isStaticJolJolActive {
                 JolJolView(start: (195, 150), end: (0, 0), imageOffset: true)
             }
-            if isJolJolMove {
+            if sequenceOneStore.isDynamicJolJolActive {
                 JolJolView(start: (195, 150), end: (0, -150), imageOffset: true)
             }
-            if isMuho {
+            if sequenceOneStore.isMoonWalkMuhoActive {
                 CharacterView(objectName: .BigMuho, makeDirection: .Side_1, durationNumber: true, start: (0, 440), end: (100, 0))
             }
             
         }
         .onReceive(globalStore.$scriptCount, perform: { currentCount in
-            handleSequenceView(scriptCount: currentCount)
+            sequenceOneStore.handleSequenceInteraction(scriptCount: currentCount)
         })
     }
 }

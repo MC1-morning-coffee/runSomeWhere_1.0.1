@@ -38,10 +38,36 @@ extension SceneStore {
 
 class SequenceOneStore: ObservableObject {
     
+    @Published
+    var isStaticJolJolActive = false
+    
+    @Published
+    var isDynamicJolJolActive = false
+    
+    @Published
+    var isMoonWalkMuhoActive = false
+    
+    @Published
+    var isPlayerMove = true
     
     func handleSequenceInteraction(scriptCount: Int) {
         switch scriptCount {
-            
+        case 0:
+            isDynamicJolJolActive = true
+            setTimeoutClosure(timeCount: 3000) {
+                self.isStaticJolJolActive = true
+            }
+        case 3:
+            isStaticJolJolActive = false
+//            isDynamicJolJolActive = true
+        case 7:
+            isDynamicJolJolActive = false
+            isMoonWalkMuhoActive = true
+        case 10:
+            isPlayerMove = false
+            setTimeoutClosure(timeCount: 1) {
+                self.isPlayerMove = true
+            }
         default:
             print("scriptCount: ", scriptCount)
         }
