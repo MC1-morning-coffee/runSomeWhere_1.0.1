@@ -22,7 +22,7 @@ extension SceneStore {
                 globalStore.turnOnIsSelectCharcterViewActive()
             // case 10: 사용자가 버튼 클릭으로 상태 변경
         default:
-            print("openingEvent is Ready")
+            print("no event")
         }
     }
     
@@ -43,9 +43,31 @@ class SequenceOpeningStore: ObservableObject {
     var isBackgroundBlackActive = true
     
     @Published
-    var isCharcterMove: Bool? = nil
+    var isStaticPlayersActive = false
+    
+    @Published
+    var isDynamicPlayersActive = false
     
     
+    @Published
+    var staticPlayers = [
+        PlayerInfo(user: .Walker, start: (80.0, 550.0), end: (0.0, 0.0)),
+        PlayerInfo(user: .Luna, start: (124.0, 560.0), end: (0.0, 0.0)),
+        PlayerInfo(user: .Muho, start: (168.0, 540.0), end: (0.0, 0.0)),
+        PlayerInfo(user: .Coffee, start: (220.0, 560.0), end: (0.0, 0.0)),
+        PlayerInfo(user: .Olive, start: (266.0, 570.0), end: (0.0, 0.0)),
+        PlayerInfo(user: .Henry, start: (310.0, 540.0), end: (0.0, 0.0)),
+    ]
+    
+    @Published
+    var dynamicPlayers = [
+        PlayerInfo(user: .Walker, start: (80.0, 550.0), end: (-20.0, -420.0)),
+        PlayerInfo(user: .Luna, start: (124.0, 560.0), end: (-10.0, -400.0)),
+        PlayerInfo(user: .Muho, start: (168.0, 540.0), end: (0.0, -370.0)),
+        PlayerInfo(user: .Coffee, start: (220.0, 560.0), end: (0.0, -410.0)),
+        PlayerInfo(user: .Olive, start: (266.0, 570.0), end: (20.0, -400.0)),
+        PlayerInfo(user: .Henry, start: (310.0, 540.0), end: (40.0, -370.0)),
+    ]
     
     func handleSequenceInteraction(scriptCount: Int) {
         switch scriptCount {
@@ -53,12 +75,15 @@ class SequenceOpeningStore: ObservableObject {
         case 3:
             setTimeoutClosure(timeCount: 1500) {
                 self.isBackgroundBlackActive = false
-                self.isCharcterMove = false
+                self.isStaticPlayersActive = true
             }
         case 11:
-            self.isCharcterMove = true
+            setTimeoutClosure(timeCount: 200) {
+                self.isStaticPlayersActive = false
+            }
+            self.isDynamicPlayersActive = true
         case 12:
-            self.isCharcterMove = nil
+            self.isDynamicPlayersActive = false
         default:
             print("scriptCount: ", scriptCount)
             

@@ -24,7 +24,6 @@ struct CharacterView: View {
         imageName = String("\(name)_\(direction)")
     }
     
-    
     var body: some View {
         
         VStack {
