@@ -20,11 +20,6 @@ enum Player {
 }
 
 extension Player {
-    
-    func getImageSrc(){
-        
-    }
-    
     var keyColor: String {
         switch self {
         case .Coffee:
@@ -47,7 +42,6 @@ extension Player {
     }
 }
 
-
 // User 각각 object들에 대한 정보를 저장하는 structure
 struct User {
     var id: Int // 유저의 고유한 아이디
@@ -58,6 +52,9 @@ struct User {
 }
 
 
-//@State var users: [User] = [
-//    User(id: 1, name: "Henry", direction: .Left, start: (), end: <#T##(Float, Float)#>)
-//]
+struct PlayerInfo {
+    let id = UUID()
+    let user: Player
+    let start: (Float, Float)
+    let end: (Float, Float)
+}

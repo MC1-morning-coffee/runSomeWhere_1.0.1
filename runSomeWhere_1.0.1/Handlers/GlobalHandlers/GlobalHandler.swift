@@ -75,6 +75,9 @@ extension GlobalStore {
     func turnOffIsQuizSequence() {
         isQuizSequence = false
     }
+    func turnOnIsQuizSequence() {
+        isQuizSequence = true
+    }
 }
 
 extension GlobalStore {

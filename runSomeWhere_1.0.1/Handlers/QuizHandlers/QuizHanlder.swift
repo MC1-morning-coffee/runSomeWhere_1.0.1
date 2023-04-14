@@ -10,6 +10,7 @@ import Foundation
 class QuizStore: ObservableObject {
     
     func handleSequenceQuizOne(globalStore: GlobalStore, scriptStore: ScriptStore, faceStore: FaceStore) {
+        
         globalStore.turnOffIsQuizSequence()
         scriptStore.turnOnIsTapAble()
         faceStore.turnOnIsFaceViewActive()
